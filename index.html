@@ -4,1745 +4,1145 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>খাদিজা ফ্যাশন | প্রিমিয়াম বোরকা, আবায়া ও হিজাব</title>
+<title>খাদিজা ফ্যাশন | Khadija Fashion</title>
 
-<meta name="description" content="খাদিজা ফ্যাশন — প্রিমিয়াম বোরকা, আবায়া ও হিজাব কালেকশন। বরিশাল সদর থেকে সারা বাংলাদেশে ক্যাশ অন ডেলিভারি। WhatsApp-এ অর্ডার করুন।">
+<meta name="description" content="খাদিজা ফ্যাশন — সুন্দর বোরকা, আবায়া ও হিজাব। সারা বাংলাদেশে ডেলিভারি।">
+<meta name="theme-color" content="#651d2b">
 
-<meta name="theme-color" content="#3b0718">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
-:root {
-    --maroon: #3b0718;
-    --maroon2: #5c102b;
-    --gold: #d6ad63;
-    --gold-light: #f1dba9;
-    --cream: #fffaf3;
-    --white: #ffffff;
-    --text: #4e3540;
-    --muted: #8d7880;
-    --border: #eee3d8;
-    --green: #25d366;
-    --shadow: 0 15px 45px rgba(59, 7, 24, .09);
+:root{
+--wine:#651d2b;
+--wine2:#8a3040;
+--gold:#c9a45c;
+--cream:#fffaf2;
+--dark:#2b2020;
+--muted:#766a68;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+html{
+scroll-behavior:smooth;
 }
 
-body {
-    background: var(--cream);
-    color: var(--maroon);
-    font-family: 'Hind Siliguri', sans-serif;
-    line-height: 1.7;
+body{
+font-family:'Noto Sans Bengali',sans-serif;
+color:var(--dark);
+background:#fffdf9;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+a{
+text-decoration:none;
+color:inherit;
 }
 
-button {
-    font: inherit;
+button{
+font-family:inherit;
 }
 
-img {
-    display: block;
-    max-width: 100%;
+.topbar{
+background:var(--wine);
+color:white;
+text-align:center;
+padding:9px;
+font-size:13px;
 }
 
-.container {
-    width: min(1200px, 92%);
-    margin: auto;
+header{
+position:sticky;
+top:0;
+z-index:100;
+background:#fffdf9;
+box-shadow:0 2px 12px #0000000b;
 }
 
-/* Announcement bar */
-
-.announcement {
-    background: var(--maroon);
-    color: var(--gold-light);
-    text-align: center;
-    padding: 9px 12px;
-    font-size: 13px;
-}
-
-.announcement i {
-    margin-right: 6px;
-    color: var(--gold);
-}
-
-/* Header */
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: rgba(255, 250, 243, .96);
-    backdrop-filter: blur(15px);
-    border-bottom: 1px solid var(--border);
-}
-
-.navbar {
-    min-height: 88px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 22px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;
+.nav{
+max-width:1150px;
+margin:auto;
+padding:13px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px;
 }
 
-.logo-image {
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    border: 2px solid var(--gold);
-    padding: 3px;
-    background: white;
-    object-fit: cover;
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:22px;
+font-weight:800;
+color:var(--wine);
 }
 
-.logo-icon {
-    width: 58px;
-    height: 58px;
-    border: 2px solid var(--gold);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    color: var(--gold);
-    font-size: 26px;
-    background: var(--maroon);
+.logo-icon{
+height:43px;
+width:43px;
+border:2px solid var(--gold);
+border-radius:50%;
+background:var(--wine);
+color:var(--gold);
+display:grid;
+place-items:center;
 }
 
-.logo-name {
-    font-family: 'Noto Serif Bengali', serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.35;
+nav{
+display:flex;
+gap:20px;
+font-size:14px;
+font-weight:600;
 }
 
-.logo-sub {
-    color: #a47a3e;
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    letter-spacing: 2px;
-    display: block;
+nav a:hover{
+color:var(--gold);
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    font-size: 15px;
-    font-weight: 600;
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+background:var(--wine);
+color:white;
+padding:12px 19px;
+border-radius:30px;
+border:none;
+font-weight:700;
+cursor:pointer;
 }
 
-.nav-links a {
-    transition: .25s;
+.btn:hover{
+background:var(--wine2);
 }
 
-.nav-links a:hover {
-    color: #b78b42;
+.hero{
+min-height:510px;
+display:flex;
+align-items:center;
+background:
+linear-gradient(90deg,#fff8ec 0%,#fff8eced 48%,#fff8ec18 100%),
+url('https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=1800&q=85')
+center/cover no-repeat;
 }
 
-.btn {
-    border: 1px solid var(--maroon);
-    background: var(--maroon);
-    color: white;
-    border-radius: 40px;
-    padding: 12px 23px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .3s;
+.hero-content{
+width:100%;
+max-width:1150px;
+margin:auto;
+padding:65px 22px;
 }
 
-.btn:hover {
-    background: var(--maroon2);
-    transform: translateY(-2px);
+.eyebrow{
+color:var(--wine2);
+font-weight:800;
+font-size:14px;
 }
 
-.btn-gold {
-    background: var(--gold);
-    border-color: var(--gold);
-    color: var(--maroon);
+.hero h1{
+max-width:600px;
+font-size:clamp(34px,5vw,57px);
+line-height:1.35;
+color:var(--wine);
+margin:17px 0;
 }
 
-.btn-gold:hover {
-    background: var(--gold-light);
-    color: var(--maroon);
+.hero h1 span{
+color:var(--gold);
 }
 
-.header-order {
-    white-space: nowrap;
+.hero p{
+max-width:510px;
+color:#625451;
+font-size:15px;
+line-height:2;
 }
 
-/* Hero */
-
-.hero {
-    position: relative;
-    overflow: hidden;
-    padding: 75px 0 85px;
-    background:
-        radial-gradient(circle at 5% 20%, rgba(214,173,99,.12), transparent 25%),
-        radial-gradient(circle at 95% 80%, rgba(92,16,43,.06), transparent 25%),
-        var(--cream);
+.hero-buttons{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:24px;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1.05fr .95fr;
-    align-items: center;
-    gap: 65px;
+.btn-outline{
+background:transparent;
+border:1px solid var(--wine);
+color:var(--wine);
 }
 
-.eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    background: #f4e9d7;
-    color: #875d25;
-    padding: 8px 16px;
-    border-radius: 30px;
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 22px;
+.trust{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+margin-top:30px;
+font-size:13px;
 }
 
-.hero h1 {
-    font-family: 'Noto Serif Bengali', serif;
-    font-size: clamp(38px, 5vw, 64px);
-    line-height: 1.3;
-    font-weight: 700;
-    letter-spacing: -1px;
+.trust i{
+color:var(--gold);
+margin-right:5px;
 }
 
-.hero h1 span {
-    color: #bd8c3e;
-    display: block;
+section{
+padding:65px 20px;
 }
 
-.hero-description {
-    max-width: 520px;
-    color: var(--text);
-    font-size: 17px;
-    margin: 22px 0 28px;
+.container{
+max-width:1150px;
+margin:auto;
 }
 
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 13px;
+.section-title{
+text-align:center;
+margin-bottom:32px;
 }
 
-.trust-points {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 17px;
-    margin-top: 30px;
-    color: var(--text);
-    font-size: 13px;
+.section-title h2{
+font-size:clamp(26px,4vw,36px);
+color:var(--wine);
+margin-bottom:10px;
 }
 
-.trust-points span {
-    display: flex;
-    align-items: center;
-    gap: 7px;
+.section-title p{
+color:var(--muted);
+font-size:14px;
 }
 
-.trust-points i {
-    color: #b78b42;
+.filters{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:28px;
 }
-
-/* Hero image */
 
-.hero-visual {
-    position: relative;
-    padding: 0 12px 15px 0;
+.filter-btn{
+border:1px solid #e7d8ca;
+background:white;
+padding:9px 17px;
+border-radius:30px;
+cursor:pointer;
 }
 
-.hero-frame {
-    position: relative;
-    height: 510px;
-    border-radius: 190px 190px 28px 28px;
-    overflow: hidden;
-    border: 8px solid white;
-    box-shadow: var(--shadow);
-    background: #f0e5d7;
+.filter-btn.active,
+.filter-btn:hover{
+background:var(--wine);
+color:white;
 }
 
-.hero-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.products{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
 }
 
-.hero-frame::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(0deg, rgba(59,7,24,.18), transparent 40%);
-    pointer-events: none;
+.product-card{
+border:1px solid #eee2d7;
+border-radius:17px;
+overflow:hidden;
+background:white;
+transition:.25s;
 }
 
-.floating-card {
-    position: absolute;
-    z-index: 2;
-    background: white;
-    box-shadow: 0 12px 35px rgba(59,7,24,.12);
-    border: 1px solid #f4e9dc;
-    padding: 14px 17px;
-    border-radius: 17px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.product-card:hover{
+transform:translateY(-5px);
+box-shadow:0 12px 28px #00000010;
 }
 
-.floating-card.top {
-    top: 65px;
-    right: -25px;
+.product-image{
+width:100%;
+height:290px;
+object-fit:cover;
+background:#f4ece4;
+display:block;
 }
 
-.floating-card.bottom {
-    bottom: 40px;
-    left: -32px;
+.product-info{
+padding:18px;
 }
 
-.float-icon {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    background: #f6eddf;
-    color: #a67c35;
-    font-size: 18px;
+.badge{
+display:inline-block;
+font-size:11px;
+background:#f7eddd;
+color:var(--wine);
+padding:5px 10px;
+border-radius:30px;
 }
 
-.floating-card strong {
-    display: block;
-    font-size: 14px;
+.product-info h3{
+font-size:18px;
+margin:12px 0 7px;
 }
 
-.floating-card small {
-    display: block;
-    color: var(--muted);
-    font-size: 11px;
+.product-info p{
+font-size:13px;
+color:var(--muted);
+line-height:1.8;
+min-height:45px;
 }
 
-/* Benefits */
-
-.benefits {
-    background: white;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
+.product-bottom{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:10px;
+margin-top:15px;
+flex-wrap:wrap;
 }
 
-.benefit-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.price{
+color:var(--wine);
+font-weight:800;
+font-size:17px;
 }
 
-.benefit {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 27px 15px;
-    border-right: 1px solid var(--border);
+.order-btn{
+background:#128c4b;
+color:white;
+padding:9px 13px;
+border-radius:8px;
+font-size:12px;
+font-weight:700;
 }
 
-.benefit:last-child {
-    border-right: 0;
+.order-btn:hover{
+background:#08743b;
 }
 
-.benefit-icon {
-    width: 47px;
-    height: 47px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    color: #a67c35;
-    background: #f8f0e3;
-    font-size: 20px;
+.about{
+background:var(--cream);
 }
 
-.benefit strong {
-    display: block;
-    font-size: 15px;
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
 }
 
-.benefit small {
-    color: var(--muted);
-    font-size: 12px;
+.about-image{
+width:100%;
+height:370px;
+object-fit:cover;
+border-radius:20px;
 }
 
-/* Sections */
-
-.section {
-    padding: 85px 0;
+.about h2{
+font-size:32px;
+color:var(--wine);
+margin:12px 0;
 }
 
-.section-heading {
-    text-align: center;
-    max-width: 650px;
-    margin: 0 auto 40px;
+.about p{
+color:#625553;
+font-size:14px;
+line-height:2;
 }
 
-.section-kicker {
-    color: #a67c35;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
+.feature{
+display:flex;
+gap:12px;
+margin-top:18px;
 }
 
-.section-heading h2 {
-    font-family: 'Noto Serif Bengali', serif;
-    font-size: clamp(30px, 4vw, 43px);
-    line-height: 1.4;
-    margin: 8px 0 12px;
+.feature i{
+color:var(--gold);
+font-size:22px;
+margin-top:5px;
 }
 
-.section-heading p {
-    color: var(--muted);
-    font-size: 15px;
+.contact-box{
+background:linear-gradient(135deg,var(--wine),#8d3546);
+border-radius:22px;
+padding:40px 25px;
+color:white;
+text-align:center;
 }
-
-/* Category filter */
 
-.filters {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 35px;
+.contact-box h2{
+font-size:30px;
+margin-bottom:12px;
 }
 
-.filter-btn {
-    border: 1px solid var(--border);
-    background: white;
-    color: var(--maroon);
-    padding: 10px 23px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .25s;
+.contact-box p{
+line-height:2;
+font-size:14px;
+margin-bottom:20px;
+color:#f9e9e7;
 }
 
-.filter-btn:hover,
-.filter-btn.active {
-    background: var(--maroon);
-    border-color: var(--maroon);
-    color: white;
+.contact-box .btn{
+background:var(--gold);
+color:#32141a;
 }
 
-/* Product cards */
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 25px;
+footer{
+background:#291519;
+color:#f5e8e5;
+text-align:center;
+padding:30px 15px;
+font-size:13px;
+line-height:2.2;
 }
 
-.product-card {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 23px;
-    overflow: hidden;
-    transition: .35s;
+.footer-logo{
+color:var(--gold);
+font-size:22px;
+font-weight:800;
 }
 
-.product-card:hover {
-    transform: translateY(-7px);
-    box-shadow: var(--shadow);
+.whatsapp-float{
+position:fixed;
+right:17px;
+bottom:90px;
+z-index:150;
+height:55px;
+width:55px;
+border-radius:50%;
+display:grid;
+place-items:center;
+background:#20bd5a;
+color:white;
+font-size:28px;
+box-shadow:0 5px 20px #0003;
 }
 
-.product-image {
-    height: 370px;
-    position: relative;
-    overflow: hidden;
-    background: #f3e9de;
-}
+/* Install bar */
 
-.product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform .6s;
+.install-bar{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+z-index:200;
+background:white;
+padding:11px 13px;
+padding-bottom:calc(11px + env(safe-area-inset-bottom));
+box-shadow:0 -4px 22px #0002;
+display:none;
+align-items:center;
+gap:10px;
 }
 
-.product-card:hover .product-image img {
-    transform: scale(1.06);
+.install-bar.show{
+display:flex;
 }
 
-.product-tag {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: var(--maroon);
-    color: white;
-    border-radius: 30px;
-    padding: 5px 13px;
-    font-size: 12px;
-    font-weight: 700;
+.install-icon{
+height:42px;
+width:42px;
+flex-shrink:0;
+border-radius:12px;
+display:grid;
+place-items:center;
+background:var(--wine);
+color:var(--gold);
+font-size:21px;
 }
 
-.product-tag.gold {
-    background: var(--gold);
-    color: var(--maroon);
+.install-text{
+flex:1;
+font-size:13px;
 }
 
-.product-info {
-    padding: 20px;
+.install-text small{
+display:block;
+color:var(--muted);
+font-size:11px;
 }
 
-.product-category {
-    color: #a67c35;
-    font-size: 12px;
-    font-weight: 700;
+.install-action{
+background:var(--wine);
+color:white;
+border:none;
+border-radius:8px;
+padding:10px 13px;
+font-weight:700;
+cursor:pointer;
 }
 
-.product-info h3 {
-    font-size: 20px;
-    margin: 4px 0;
+.dismiss-bar{
+border:none;
+background:transparent;
+font-size:23px;
+color:#777;
+cursor:pointer;
+padding:4px;
 }
 
-.product-info p {
-    color: var(--muted);
-    font-size: 13px;
-    margin-bottom: 17px;
-}
+/* Install popup */
 
-.product-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding-top: 15px;
-    border-top: 1px solid var(--border);
+.popup-overlay{
+position:fixed;
+inset:0;
+background:#1a0b0dcc;
+z-index:300;
+display:none;
+align-items:center;
+justify-content:center;
+padding:18px;
 }
 
-.price {
-    font-size: 23px;
-    font-weight: 700;
-    color: var(--maroon);
+.popup-overlay.show{
+display:flex;
 }
 
-.price small {
-    display: block;
-    font-size: 11px;
-    font-weight: 400;
-    color: var(--muted);
+.popup{
+position:relative;
+width:100%;
+max-width:400px;
+background:#fffdf9;
+border-radius:22px;
+overflow:hidden;
+text-align:center;
+box-shadow:0 20px 70px #0005;
 }
 
-.order-btn {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: var(--green);
-    color: white;
-    display: grid;
-    place-items: center;
-    font-size: 22px;
-    flex-shrink: 0;
-    transition: .25s;
+.popup-header{
+background:linear-gradient(135deg,var(--wine),#8a3040);
+padding:28px 22px;
+color:white;
 }
 
-.order-btn:hover {
-    background: #159447;
-    transform: scale(1.07);
+.popup-logo{
+height:66px;
+width:66px;
+border:2px solid var(--gold);
+border-radius:20px;
+display:grid;
+place-items:center;
+margin:0 auto 13px;
+font-size:30px;
+color:var(--gold);
 }
 
-.product-card.hide {
-    display: none;
+.popup-header h3{
+font-size:22px;
+margin-bottom:10px;
 }
 
-/* Special collection */
-
-.collection-banner {
-    background: var(--maroon);
-    color: white;
-    border-radius: 30px;
-    padding: 48px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 25px;
-    position: relative;
-    overflow: hidden;
+.popup-header p{
+font-size:13px;
+line-height:1.8;
+color:#f8e9e6;
 }
 
-.collection-banner::after {
-    content: "✦";
-    position: absolute;
-    font-size: 230px;
-    color: rgba(214,173,99,.08);
-    right: 150px;
-    top: -80px;
+.popup-close{
+position:absolute;
+right:12px;
+top:10px;
+height:32px;
+width:32px;
+border:0;
+border-radius:50%;
+background:#ffffff25;
+color:white;
+font-size:22px;
+cursor:pointer;
 }
 
-.collection-banner > * {
-    position: relative;
-    z-index: 1;
+.popup-body{
+padding:22px;
 }
 
-.collection-banner h2 {
-    font-family: 'Noto Serif Bengali', serif;
-    font-size: clamp(25px, 4vw, 39px);
-    line-height: 1.45;
-    margin: 8px 0;
+.popup-body p{
+font-size:13px;
+color:var(--muted);
+line-height:1.9;
+margin-bottom:15px;
 }
 
-.collection-banner p {
-    color: #ead8dd;
-    max-width: 600px;
-    font-size: 15px;
+.popup-install{
+width:100%;
+border-radius:10px;
 }
 
-.collection-banner .btn {
-    background: var(--gold);
-    color: var(--maroon);
-    border-color: var(--gold);
-    white-space: nowrap;
+.popup-later{
+display:block;
+width:100%;
+border:0;
+background:transparent;
+padding:13px 5px 3px;
+color:var(--muted);
+cursor:pointer;
 }
-
-/* About */
 
-.about-grid {
-    display: grid;
-    grid-template-columns: .9fr 1.1fr;
-    align-items: center;
-    gap: 60px;
+@media(max-width:800px){
+nav{
+display:none;
 }
 
-.about-visual {
-    position: relative;
+.products{
+grid-template-columns:repeat(2,1fr);
 }
 
-.about-visual img {
-    width: 100%;
-    height: 430px;
-    object-fit: cover;
-    border-radius: 25px;
-    box-shadow: var(--shadow);
+.product-image{
+height:240px;
 }
 
-.about-text h2 {
-    font-family: 'Noto Serif Bengali', serif;
-    font-size: 37px;
-    line-height: 1.45;
-    margin: 8px 0 18px;
+.about-grid{
+grid-template-columns:1fr;
 }
 
-.about-text p {
-    color: var(--text);
-    margin-bottom: 15px;
-    font-size: 15px;
+.about-image{
+height:300px;
 }
-
-.about-list {
-    list-style: none;
-    display: grid;
-    gap: 11px;
-    margin-top: 20px;
 }
 
-.about-list li {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+@media(max-width:520px){
+.topbar{
+font-size:11px;
 }
 
-.about-list i {
-    color: #a67c35;
+.nav{
+padding:10px 12px;
 }
-
-/* Order CTA */
 
-.order-cta {
-    padding: 0 0 85px;
+.logo{
+font-size:18px;
 }
 
-.order-box {
-    text-align: center;
-    padding: 55px 25px;
-    background: #f4eadb;
-    border: 1px solid #ead8bd;
-    border-radius: 30px;
+.logo-icon{
+width:37px;
+height:37px;
 }
 
-.order-box .cta-icon {
-    font-size: 37px;
-    color: #a67c35;
-    margin-bottom: 10px;
+.nav .btn{
+font-size:11px;
+padding:10px;
 }
 
-.order-box h2 {
-    font-family: 'Noto Serif Bengali', serif;
-    font-size: clamp(27px, 4vw, 39px);
-    margin-bottom: 10px;
+.hero{
+min-height:480px;
+background-position:60% center;
 }
 
-.order-box p {
-    color: var(--text);
-    margin-bottom: 24px;
+.hero-content{
+padding:40px 17px;
+background:#fff8eccb;
 }
 
-/* Footer */
-
-footer {
-    background: #2c0411;
-    color: #f4e7d5;
-    padding: 55px 0 20px;
+.hero h1{
+font-size:34px;
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
-    gap: 45px;
-    padding-bottom: 35px;
+.hero p{
+font-size:13px;
 }
 
-.footer-brand .logo-name {
-    color: white;
+.trust{
+gap:12px;
+font-size:11px;
 }
 
-.footer-brand p {
-    color: #d5bdc4;
-    margin-top: 18px;
-    font-size: 14px;
-    max-width: 350px;
+section{
+padding:48px 13px;
 }
 
-.footer-title {
-    color: var(--gold);
-    font-size: 19px;
-    margin-bottom: 16px;
+.products{
+gap:11px;
 }
 
-.footer-links {
-    list-style: none;
-    display: grid;
-    gap: 10px;
-    font-size: 14px;
+.product-image{
+height:180px;
 }
 
-.footer-links a:hover {
-    color: var(--gold);
+.product-info{
+padding:11px;
 }
 
-.footer-links i {
-    margin-right: 8px;
-    color: var(--gold);
-    width: 17px;
+.product-info h3{
+font-size:14px;
 }
 
-.footer-bottom {
-    border-top: 1px solid rgba(255,255,255,.12);
-    padding-top: 20px;
-    text-align: center;
-    font-size: 12px;
-    color: #cbb2bb;
+.product-info p{
+font-size:11px;
+min-height:50px;
 }
 
-.footer-bottom span {
-    color: var(--gold);
+.product-bottom{
+align-items:flex-start;
+flex-direction:column;
 }
 
-/* Floating WhatsApp */
-
-.whatsapp-float {
-    position: fixed;
-    right: 20px;
-    bottom: 22px;
-    z-index: 1500;
-    width: 60px;
-    height: 60px;
-    display: grid;
-    place-items: center;
-    background: var(--green);
-    color: white;
-    font-size: 32px;
-    border-radius: 50%;
-    box-shadow: 0 8px 25px rgba(37,211,102,.35);
-    transition: .25s;
+.price{
+font-size:15px;
 }
 
-.whatsapp-float:hover {
-    transform: scale(1.08);
+.order-btn{
+font-size:11px;
 }
-
-/* Responsive */
-
-@media (max-width: 1000px) {
-    .nav-links {
-        gap: 14px;
-        font-size: 14px;
-    }
-
-    .header-order {
-        padding: 10px 15px;
-        font-size: 13px;
-    }
-
-    .hero-grid {
-        gap: 35px;
-    }
-
-    .hero-frame {
-        height: 430px;
-    }
-
-    .product-image {
-        height: 320px;
-    }
 
-    .benefit {
-        padding: 20px 10px;
-        gap: 9px;
-    }
+.about h2{
+font-size:26px;
 }
-
-@media (max-width: 760px) {
-    .navbar {
-        min-height: 75px;
-        flex-wrap: wrap;
-        padding: 10px 0;
-    }
-
-    .logo-image,
-    .logo-icon {
-        width: 48px;
-        height: 48px;
-    }
-
-    .logo-name {
-        font-size: 20px;
-    }
-
-    .logo-sub {
-        font-size: 8px;
-        letter-spacing: 1px;
-    }
-
-    .nav-links {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        gap: 22px;
-        padding: 8px 0 5px;
-        border-top: 1px solid var(--border);
-    }
-
-    .header-order {
-        padding: 9px 13px;
-        font-size: 12px;
-    }
-
-    .hero {
-        padding: 50px 0 60px;
-    }
-
-    .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 38px;
-    }
-
-    .hero h1 {
-        font-size: clamp(37px, 9vw, 53px);
-    }
-
-    .hero-description {
-        font-size: 15px;
-    }
 
-    .hero-frame {
-        height: 440px;
-        border-radius: 150px 150px 25px 25px;
-    }
-
-    .floating-card.top {
-        right: 0;
-    }
-
-    .floating-card.bottom {
-        left: 0;
-    }
-
-    .benefit-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .benefit:nth-child(2) {
-        border-right: 0;
-    }
-
-    .benefit:nth-child(-n+2) {
-        border-bottom: 1px solid var(--border);
-    }
-
-    .section {
-        padding: 60px 0;
-    }
-
-    .product-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-
-    .product-image {
-        height: 290px;
-    }
-
-    .product-info {
-        padding: 14px;
-    }
-
-    .product-info h3 {
-        font-size: 17px;
-    }
-
-    .product-info p {
-        font-size: 12px;
-    }
-
-    .price {
-        font-size: 19px;
-    }
-
-    .order-btn {
-        width: 42px;
-        height: 42px;
-        font-size: 19px;
-    }
-
-    .collection-banner {
-        grid-template-columns: 1fr;
-        padding: 35px 25px;
-    }
-
-    .collection-banner .btn {
-        justify-self: start;
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .about-visual img {
-        height: 350px;
-    }
-
-    .about-text h2 {
-        font-size: 31px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-
-    .footer-brand {
-        grid-column: 1 / -1;
-    }
+.contact-box{
+padding:28px 15px;
 }
 
-@media (max-width: 420px) {
-    .container {
-        width: 93%;
-    }
-
-    .announcement {
-        font-size: 11px;
-    }
-
-    .logo {
-        gap: 7px;
-    }
-
-    .logo-name {
-        font-size: 17px;
-    }
-
-    .logo-image,
-    .logo-icon {
-        width: 42px;
-        height: 42px;
-    }
-
-    .header-order {
-        padding: 8px 10px;
-        font-size: 11px;
-        gap: 5px;
-    }
-
-    .nav-links {
-        gap: 16px;
-        font-size: 13px;
-    }
-
-    .hero-frame {
-        height: 360px;
-    }
-
-    .floating-card {
-        padding: 10px;
-    }
-
-    .floating-card strong {
-        font-size: 12px;
-    }
-
-    .floating-card small {
-        font-size: 10px;
-    }
-
-    .float-icon {
-        width: 34px;
-        height: 34px;
-    }
-
-    .product-grid {
-        grid-template-columns: 1fr;
-        gap: 22px;
-    }
-
-    .product-image {
-        height: 370px;
-    }
-
-    .benefit {
-        padding: 16px 8px;
-    }
-
-    .benefit-icon {
-        width: 38px;
-        height: 38px;
-        font-size: 16px;
-    }
-
-    .benefit strong {
-        font-size: 13px;
-    }
-
-    .benefit small {
-        font-size: 10px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 27px;
-    }
-
-    .footer-brand {
-        grid-column: auto;
-    }
+.contact-box h2{
+font-size:24px;
 }
-
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-    }
 }
 </style>
 </head>
 
 <body>
 
-<!-- Announcement -->
-<div class="announcement">
-    <i class="fa-solid fa-truck-fast"></i>
-    বরিশাল সদর থেকে সারা বাংলাদেশে ক্যাশ অন ডেলিভারি
+<div class="topbar">
+✨ মার্জিত পোশাকে আপনার সৌন্দর্য — সারা বাংলাদেশে ডেলিভারি ✨
 </div>
 
-<!-- Header -->
 <header>
-    <div class="container navbar">
+<div class="nav">
 
-        <a href="#home" class="logo" aria-label="খাদিজা ফ্যাশন হোম">
-            <!-- logo.png থাকলে ছবিটি দেখাবে -->
-            <img
-                src="logo.png"
-                alt="খাদিজা ফ্যাশন লোগো"
-                class="logo-image"
-                onerror="this.style.display='none';this.nextElementSibling.style.display='grid';"
-            >
+<a href="#home" class="logo">
+<span class="logo-icon"><i class="fa-solid fa-leaf"></i></span>
+<span>খাদিজা ফ্যাশন</span>
+</a>
 
-            <div class="logo-icon" style="display:none">
-                <i class="fa-solid fa-crown"></i>
-            </div>
+<nav>
+<a href="#home">হোম</a>
+<a href="#products">কালেকশন</a>
+<a href="#about">আমাদের সম্পর্কে</a>
+<a href="#contact">যোগাযোগ</a>
+</nav>
 
-            <div>
-                <div class="logo-name">খাদিজা ফ্যাশন</div>
-                <span class="logo-sub">KHADIJA FASHION</span>
-            </div>
-        </a>
+<a class="btn" href="https://wa.me/8801618161443" target="_blank" rel="noopener">
+<i class="fa-brands fa-whatsapp"></i> অর্ডার করুন
+</a>
 
-        <nav class="nav-links" aria-label="প্রধান মেনু">
-            <a href="#home">হোম</a>
-            <a href="#shop">বোরকা</a>
-            <a href="#shop">আবায়া</a>
-            <a href="#shop">হিজাব</a>
-            <a href="#about">আমাদের সম্পর্কে</a>
-        </nav>
-
-        <a
-            class="btn header-order"
-            href="https://wa.me/8801618161443"
-            target="_blank"
-            rel="noopener"
-        >
-            <i class="fa-brands fa-whatsapp"></i>
-            অর্ডার করুন
-        </a>
-
-    </div>
+</div>
 </header>
 
 <main>
 
-<!-- Hero -->
 <section class="hero" id="home">
-    <div class="container hero-grid">
+<div class="hero-content">
 
-        <div class="hero-content">
+<div class="eyebrow">KHADIJA FASHION · MODEST WEAR</div>
 
-            <div class="eyebrow">
-                <i class="fa-solid fa-star"></i>
-                সৌন্দর্যে শালীনতা, স্টাইলে আভিজাত্য
-            </div>
+<h1>
+আপনার সৌন্দর্যে যোগ হোক
+<span>আভিজাত্যের</span> ছোঁয়া
+</h1>
 
-            <h1>
-                পর্দা হোক
-                <span>আপনার অহংকার</span>
-            </h1>
+<p>
+রুচিশীল বোরকা, আবায়া ও হিজাবের আকর্ষণীয় কালেকশন।
+মানসম্মত পণ্য, যত্নসহকারে প্যাকেজিং এবং সারা বাংলাদেশে ডেলিভারি।
+</p>
 
-            <p class="hero-description">
-                আপনার পছন্দের প্রিমিয়াম বোরকা, আবায়া ও হিজাবের
-                আকর্ষণীয় কালেকশন নিয়ে খাদিজা ফ্যাশন।
-                শালীনতা ও আভিজাত্যের সুন্দর সমন্বয়ে বেছে নিন
-                আপনার পছন্দের পোশাক।
-            </p>
+<div class="hero-buttons">
+<a class="btn" href="#products">
+কালেকশন দেখুন <i class="fa-solid fa-arrow-right"></i>
+</a>
 
-            <div class="hero-buttons">
-                <a href="#shop" class="btn">
-                    কালেকশন দেখুন
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+<a class="btn btn-outline" href="https://wa.me/8801618161443" target="_blank" rel="noopener">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+</div>
 
-                <a
-                    href="https://wa.me/8801618161443?text=আসসালামু%20আলাইকুম%2C%20খাদিজা%20ফ্যাশনের%20কালেকশন%20দেখতে%20চাই।"
-                    class="btn btn-gold"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    <i class="fa-brands fa-whatsapp"></i>
-                    WhatsApp অর্ডার
-                </a>
-            </div>
+<div class="trust">
+<span><i class="fa-solid fa-truck-fast"></i> দেশজুড়ে ডেলিভারি</span>
+<span><i class="fa-solid fa-heart"></i> যত্নে বাছাই করা</span>
+<span><i class="fa-solid fa-shield-heart"></i> বিশ্বস্ত সেবা</span>
+</div>
 
-            <div class="trust-points">
-                <span><i class="fa-solid fa-check-circle"></i> সহজ অর্ডার</span>
-                <span><i class="fa-solid fa-truck-fast"></i> ক্যাশ অন ডেলিভারি</span>
-                <span><i class="fa-solid fa-heart"></i> শালীন ফ্যাশন</span>
-            </div>
-
-        </div>
-
-        <div class="hero-visual">
-
-            <div class="hero-frame">
-                <img
-                    src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=85&w=1000"
-                    alt="খাদিজা ফ্যাশনের প্রিমিয়াম ফ্যাশন কালেকশন"
-                    fetchpriority="high"
-                >
-            </div>
-
-            <div class="floating-card top">
-                <div class="float-icon">
-                    <i class="fa-solid fa-gem"></i>
-                </div>
-                <div>
-                    <strong>প্রিমিয়াম কালেকশন</strong>
-                    <small>রুচিশীল ডিজাইন</small>
-                </div>
-            </div>
-
-            <div class="floating-card bottom">
-                <div class="float-icon">
-                    <i class="fa-solid fa-truck-fast"></i>
-                </div>
-                <div>
-                    <strong>সারা বাংলাদেশে</strong>
-                    <small>ক্যাশ অন ডেলিভারি</small>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
+</div>
 </section>
 
-<!-- Benefits -->
-<section class="benefits">
-    <div class="container benefit-grid">
+<section id="products">
+<div class="container">
 
-        <div class="benefit">
-            <div class="benefit-icon">
-                <i class="fa-solid fa-shirt"></i>
-            </div>
-            <div>
-                <strong>রুচিশীল ডিজাইন</strong>
-                <small>আধুনিক ও শালীন</small>
-            </div>
-        </div>
+<div class="section-title">
+<h2>আমাদের জনপ্রিয় কালেকশন</h2>
+<p>আপনার পছন্দের ডিজাইনটি বেছে নিন</p>
+</div>
 
-        <div class="benefit">
-            <div class="benefit-icon">
-                <i class="fa-solid fa-box-open"></i>
-            </div>
-            <div>
-                <strong>সহজ অর্ডার</strong>
-                <small>WhatsApp-এর মাধ্যমে</small>
-            </div>
-        </div>
+<div class="filters">
+<button class="filter-btn active" data-filter="all">সব পণ্য</button>
+<button class="filter-btn" data-filter="borka">বোরকা</button>
+<button class="filter-btn" data-filter="abaya">আবায়া</button>
+<button class="filter-btn" data-filter="hijab">হিজাব</button>
+</div>
 
-        <div class="benefit">
-            <div class="benefit-icon">
-                <i class="fa-solid fa-truck-fast"></i>
-            </div>
-            <div>
-                <strong>হোম ডেলিভারি</strong>
-                <small>সারা বাংলাদেশে</small>
-            </div>
-        </div>
+<div class="products">
 
-        <div class="benefit">
-            <div class="benefit-icon">
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div>
-                <strong>আমাদের ঠিকানা</strong>
-                <small>বরিশাল সদর</small>
-            </div>
-        </div>
+<article class="product-card" data-category="borka">
+<img class="product-image" src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80" alt="রয়্যাল মেরুন বোরকা" loading="lazy">
+<div class="product-info">
+<span class="badge">বেস্ট সেলার</span>
+<h3>রয়্যাল মেরুন বোরকা</h3>
+<p>আভিজাত্যপূর্ণ ডিজাইন ও আরামদায়ক কাপড়।</p>
+<div class="product-bottom">
+<span class="price">৳ ২,৫৫০</span>
+<a class="order-btn" href="https://wa.me/8801618161443?text=রয়্যাল%20মেরুন%20বোরকা%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার দিন</a>
+</div>
+</div>
+</article>
 
-    </div>
+<article class="product-card" data-category="abaya">
+<img class="product-image" src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80" alt="খাদিজা গোল্ড আবায়া" loading="lazy">
+<div class="product-info">
+<span class="badge">নতুন কালেকশন</span>
+<h3>খাদিজা গোল্ড আবায়া</h3>
+<p>সিম্পল ও এলিগ্যান্ট লুকের জন্য সুন্দর পছন্দ।</p>
+<div class="product-bottom">
+<span class="price">৳ ৩,১৫০</span>
+<a class="order-btn" href="https://wa.me/8801618161443?text=খাদিজা%20গোল্ড%20আবায়া%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার দিন</a>
+</div>
+</div>
+</article>
+
+<article class="product-card" data-category="hijab">
+<img class="product-image" src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=80" alt="প্রিমিয়াম হিজাব সেট" loading="lazy">
+<div class="product-info">
+<span class="badge">কমফোর্ট কালেকশন</span>
+<h3>প্রিমিয়াম হিজাব সেট</h3>
+<p>দৈনন্দিন ব্যবহার ও উপহারের জন্য মানানসই।</p>
+<div class="product-bottom">
+<span class="price">৳ ১,৪৫০</span>
+<a class="order-btn" href="https://wa.me/8801618161443?text=প্রিমিয়াম%20হিজাব%20সেট%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার দিন</a>
+</div>
+</div>
+</article>
+
+<article class="product-card" data-category="borka">
+<img class="product-image" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="এলিগ্যান্ট বোরকা" loading="lazy">
+<div class="product-info">
+<span class="badge">এলিগ্যান্ট</span>
+<h3>এলিগ্যান্ট বোরকা</h3>
+<p>আপনার পছন্দের রং ও সাইজ জানতে যোগাযোগ করুন।</p>
+<div class="product-bottom">
+<span class="price">দাম জানতে নক করুন</span>
+<a class="order-btn" href="https://wa.me/8801618161443?text=এলিগ্যান্ট%20বোরকার%20দাম%20জানতে%20চাই" target="_blank" rel="noopener">দাম জানুন</a>
+</div>
+</div>
+</article>
+
+<article class="product-card" data-category="abaya">
+<img class="product-image" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80" alt="প্রিমিয়াম আবায়া" loading="lazy">
+<div class="product-info">
+<span class="badge">প্রিমিয়াম</span>
+<h3>প্রিমিয়াম আবায়া</h3>
+<p>নতুন ডিজাইন ও স্টকের তথ্য জানতে মেসেজ দিন।</p>
+<div class="product-bottom">
+<span class="price">দাম জানতে নক করুন</span>
+<a class="order-btn" href="https://wa.me/8801618161443?text=প্রিমিয়াম%20আবায়ার%20দাম%20জানতে%20চাই" target="_blank" rel="noopener">দাম জানুন</a>
+</div>
+</div>
+</article>
+
+<article class="product-card" data-category="hijab">
+<img class="product-image" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80" alt="ডেইলি হিজাব" loading="lazy">
+<div class="product-info">
+<span class="badge">ডেইলি ওয়্যার</span>
+<h3>ডেইলি হিজাব</h3>
+<p>রং, কাপড় ও মূল্য সম্পর্কে বিস্তারিত জানতে নক করুন।</p>
+<div class="product-bottom">
+<span class="price">দাম জানতে নক করুন</span>
+<a class="order-btn" href="https://wa.me/8801618161443?text=ডেইলি%20হিজাবের%20দাম%20জানতে%20চাই" target="_blank" rel="noopener">দাম জানুন</a>
+</div>
+</div>
+</article>
+
+</div>
+</div>
 </section>
 
-<!-- Products -->
-<section class="section" id="shop">
-    <div class="container">
+<section class="about" id="about">
+<div class="container about-grid">
 
-        <div class="section-heading">
-            <span class="section-kicker">OUR COLLECTION</span>
-            <h2>আপনার পছন্দের কালেকশন</h2>
-            <p>
-                প্রতিদিনের ব্যবহার থেকে বিশেষ উপলক্ষ—
-                বেছে নিন আপনার পছন্দের বোরকা, আবায়া ও হিজাব।
-            </p>
-        </div>
+<img class="about-image" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=80" alt="খাদিজা ফ্যাশন কালেকশন" loading="lazy">
 
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">সব কালেকশন</button>
-            <button class="filter-btn" data-filter="borka">বোরকা</button>
-            <button class="filter-btn" data-filter="abaya">আবায়া</button>
-            <button class="filter-btn" data-filter="hijab">হিজাব</button>
-        </div>
+<div>
+<div class="eyebrow">আমাদের সম্পর্কে</div>
+<h2>স্টাইল, স্বাচ্ছন্দ্য ও আস্থার ঠিকানা</h2>
 
-        <div class="product-grid">
+<p>
+খাদিজা ফ্যাশনে আমরা আপনার পছন্দ, স্বাচ্ছন্দ্য ও রুচিকে গুরুত্ব দিই।
+আমাদের কালেকশনে রয়েছে মার্জিত ডিজাইন ও সুন্দরভাবে বাছাই করা পোশাক।
+</p>
 
-            <!-- Product 1 -->
-            <article class="product-card" data-category="borka">
-                <div class="product-image">
-                    <span class="product-tag">নতুন কালেকশন</span>
-                    <img
-                        src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=85&w=700"
-                        alt="রয়েল মেরুন বোরকা"
-                        loading="lazy"
-                    >
-                </div>
+<div class="feature">
+<i class="fa-solid fa-truck-fast"></i>
+<div>
+<strong>সারা বাংলাদেশে ডেলিভারি</strong>
+<p>আপনার ঠিকানায় পণ্য পৌঁছে দেওয়ার ব্যবস্থা।</p>
+</div>
+</div>
 
-                <div class="product-info">
-                    <span class="product-category">বোরকা কালেকশন</span>
-                    <h3>রয়েল মেরুন বোরকা</h3>
-                    <p>আকর্ষণীয় ডিজাইন ও রুচিশীল লুক।</p>
+<div class="feature">
+<i class="fa-brands fa-whatsapp"></i>
+<div>
+<strong>সহজে অর্ডার করুন</strong>
+<p>WhatsApp-এ পণ্যের নাম, সাইজ ও ঠিকানা জানিয়ে অর্ডার করুন।</p>
+</div>
+</div>
+</div>
 
-                    <div class="product-bottom">
-                        <div class="price">
-                            ৳ ২,৫৫০
-                            <small>দাম নিশ্চিত করে অর্ডার করুন</small>
-                        </div>
-
-                        <a
-                            class="order-btn"
-                            href="https://wa.me/8801618161443?text=আসসালামু%20আলাইকুম%2C%20আমি%20রয়েল%20মেরুন%20বোরকা%20অর্ডার%20করতে%20চাই।"
-                            aria-label="রয়েল মেরুন বোরকা অর্ডার করুন"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Product 2 -->
-            <article class="product-card" data-category="abaya">
-                <div class="product-image">
-                    <span class="product-tag gold">প্রিমিয়াম</span>
-                    <img
-                        src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?q=85&w=700"
-                        alt="খাদিজা গোল্ড আবায়া"
-                        loading="lazy"
-                    >
-                </div>
-
-                <div class="product-info">
-                    <span class="product-category">আবায়া কালেকশন</span>
-                    <h3>খাদিজা গোল্ড আবায়া</h3>
-                    <p>মার্জিত ডিজাইন ও আভিজাত্যের ছোঁয়া।</p>
-
-                    <div class="product-bottom">
-                        <div class="price">
-                            ৳ ৩,১৫০
-                            <small>দাম নিশ্চিত করে অর্ডার করুন</small>
-                        </div>
-
-                        <a
-                            class="order-btn"
-                            href="https://wa.me/8801618161443?text=আসসালামু%20আলাইকুম%2C%20আমি%20খাদিজা%20গোল্ড%20আবায়া%20অর্ডার%20করতে%20চাই।"
-                            aria-label="খাদিজা গোল্ড আবায়া অর্ডার করুন"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Product 3 -->
-            <article class="product-card" data-category="hijab">
-                <div class="product-image">
-                    <span class="product-tag">জনপ্রিয়</span>
-                    <img
-                        src="https://images.unsplash.com/photo-1617019114583-dd34c9d59cd2?q=85&w=700"
-                        alt="প্রিমিয়াম হিজাব সেট"
-                        loading="lazy"
-                    >
-                </div>
-
-                <div class="product-info">
-                    <span class="product-category">হিজাব কালেকশন</span>
-                    <h3>প্রিমিয়াম হিজাব সেট</h3>
-                    <p>সুন্দর রঙ ও স্টাইলিশ কম্বিনেশন।</p>
-
-                    <div class="product-bottom">
-                        <div class="price">
-                            ৳ ১,৪৫০
-                            <small>দাম নিশ্চিত করে অর্ডার করুন</small>
-                        </div>
-
-                        <a
-                            class="order-btn"
-                            href="https://wa.me/8801618161443?text=আসসালামু%20আলাইকুম%2C%20আমি%20প্রিমিয়াম%20হিজাব%20সেট%20অর্ডার%20করতে%20চাই।"
-                            aria-label="প্রিমিয়াম হিজাব সেট অর্ডার করুন"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Product 4 -->
-            <article class="product-card" data-category="borka">
-                <div class="product-image">
-                    <span class="product-tag gold">ক্লাসিক</span>
-                    <img
-                        src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=85&w=700"
-                        alt="এলিগ্যান্ট বোরকা কালেকশন"
-                        loading="lazy"
-                    >
-                </div>
-
-                <div class="product-info">
-                    <span class="product-category">বোরকা কালেকশন</span>
-                    <h3>এলিগ্যান্ট বোরকা</h3>
-                    <p>সাধারণ ব্যবহারে মার্জিত ও আরামদায়ক স্টাইল।</p>
-
-                    <div class="product-bottom">
-                        <div class="price">
-                            দাম জানতে যোগাযোগ করুন
-                            <small>WhatsApp-এ বিস্তারিত</small>
-                        </div>
-
-                        <a
-                            class="order-btn"
-                            href="https://wa.me/8801618161443?text=আমি%20এলিগ্যান্ট%20বোরকার%20দাম%20ও%20বিস্তারিত%20জানতে%20চাই।"
-                            aria-label="এলিগ্যান্ট বোরকার দাম জানুন"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Product 5 -->
-            <article class="product-card" data-category="abaya">
-                <div class="product-image">
-                    <span class="product-tag">স্টাইলিশ</span>
-                    <img
-                        src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=85&w=700"
-                        alt="মডেস্ট আবায়া কালেকশন"
-                        loading="lazy"
-                    >
-                </div>
-
-                <div class="product-info">
-                    <span class="product-category">আবায়া কালেকশন</span>
-                    <h3>মডেস্ট আবায়া</h3>
-                    <p>শালীনতা ও আধুনিক ফ্যাশনের সমন্বয়।</p>
-
-                    <div class="product-bottom">
-                        <div class="price">
-                            দাম জানতে যোগাযোগ করুন
-                            <small>WhatsApp-এ বিস্তারিত</small>
-                        </div>
-
-                        <a
-                            class="order-btn"
-                            href="https://wa.me/8801618161443?text=আমি%20মডেস্ট%20আবায়ার%20দাম%20ও%20বিস্তারিত%20জানতে%20চাই।"
-                            aria-label="মডেস্ট আবায়ার দাম জানুন"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Product 6 -->
-            <article class="product-card" data-category="hijab">
-                <div class="product-image">
-                    <span class="product-tag gold">নতুন</span>
-                    <img
-                        src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=85&w=700"
-                        alt="স্টাইলিশ হিজাব কালেকশন"
-                        loading="lazy"
-                    >
-                </div>
-
-                <div class="product-info">
-                    <span class="product-category">হিজাব কালেকশন</span>
-                    <h3>স্টাইলিশ হিজাব</h3>
-                    <p>বিভিন্ন রঙ ও ডিজাইনের হিজাব।</p>
-
-                    <div class="product-bottom">
-                        <div class="price">
-                            দাম জানতে যোগাযোগ করুন
-                            <small>WhatsApp-এ বিস্তারিত</small>
-                        </div>
-
-                        <a
-                            class="order-btn"
-                            href="https://wa.me/8801618161443?text=আমি%20স্টাইলিশ%20হিজাবের%20দাম%20ও%20বিস্তারিত%20জানতে%20চাই।"
-                            aria-label="স্টাইলিশ হিজাবের দাম জানুন"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-        </div>
-
-    </div>
+</div>
 </section>
 
-<!-- Collection banner -->
-<section class="container" style="padding-bottom:75px">
-    <div class="collection-banner">
+<section id="contact">
+<div class="container">
+<div class="contact-box">
 
-        <div>
-            <span class="section-kicker" style="color:var(--gold-light)">
-                KHADIJA FASHION
-            </span>
+<h2>আপনার পছন্দের পোশাকটি অর্ডার করুন</h2>
 
-            <h2>আপনার পছন্দ, আমাদের অগ্রাধিকার</h2>
+<p>
+পণ্যের দাম, সাইজ, রং ও ডেলিভারি সম্পর্কে জানতে যোগাযোগ করুন।<br>
+ঠিকানা: বরিশাল সদর, বাংলাদেশ
+</p>
 
-            <p>
-                আপনার পছন্দের ডিজাইন, রং ও সাইজ সম্পর্কে জানতে
-                সরাসরি WhatsApp-এ যোগাযোগ করুন।
-                অর্ডারের আগে পণ্যের মূল্য ও ডেলিভারি চার্জ নিশ্চিত করে নিন।
-            </p>
-        </div>
+<a class="btn" href="https://wa.me/8801618161443" target="_blank" rel="noopener">
+<i class="fa-brands fa-whatsapp"></i>
+WhatsApp: 01618-161443
+</a>
 
-        <a
-            href="https://wa.me/8801618161443?text=আসসালামু%20আলাইকুম%2C%20খাদিজা%20ফ্যাশনের%20কালেকশন%20সম্পর্কে%20জানতে%20চাই।"
-            class="btn"
-            target="_blank"
-            rel="noopener"
-        >
-            <i class="fa-brands fa-whatsapp"></i>
-            যোগাযোগ করুন
-        </a>
-
-    </div>
-</section>
-
-<!-- About -->
-<section class="section" id="about" style="background:white">
-    <div class="container about-grid">
-
-        <div class="about-visual">
-            <img
-                src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?q=85&w=900"
-                alt="খাদিজা ফ্যাশনের পোশাকের অনুপ্রেরণা"
-                loading="lazy"
-            >
-        </div>
-
-        <div class="about-text">
-            <span class="section-kicker">ABOUT KHADIJA FASHION</span>
-
-            <h2>
-                শালীন পোশাকে ফুটে উঠুক
-                আপনার নিজস্ব সৌন্দর্য
-            </h2>
-
-            <p>
-                খাদিজা ফ্যাশনে আমরা বোরকা, আবায়া ও হিজাবের
-                আকর্ষণীয় কালেকশন তুলে ধরার চেষ্টা করি।
-                আপনার পছন্দ অনুযায়ী পণ্যের বিস্তারিত জানতে
-                আমাদের সঙ্গে সরাসরি যোগাযোগ করতে পারবেন।
-            </p>
-
-            <p>
-                আমাদের অবস্থান বরিশাল সদর, বাংলাদেশ।
-                দেশের বিভিন্ন প্রান্তে অর্ডার ও ডেলিভারি
-                সম্পর্কে বিস্তারিত জানতে WhatsApp-এ যোগাযোগ করুন।
-            </p>
-
-            <ul class="about-list">
-                <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    পণ্যের বিস্তারিত জানার সুবিধা
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    সরাসরি WhatsApp-এ অর্ডার
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    ডেলিভারির তথ্য নিশ্চিত করার সুযোগ
-                </li>
-            </ul>
-
-            <a
-                href="https://wa.me/8801618161443"
-                class="btn"
-                target="_blank"
-                rel="noopener"
-                style="margin-top:25px"
-            >
-                <i class="fa-brands fa-whatsapp"></i>
-                আমাদের সঙ্গে কথা বলুন
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<!-- Order CTA -->
-<section class="order-cta section">
-    <div class="container">
-
-        <div class="order-box">
-            <div class="cta-icon">
-                <i class="fa-solid fa-bag-shopping"></i>
-            </div>
-
-            <h2>পছন্দের পোশাকটি অর্ডার করবেন?</h2>
-
-            <p>
-                WhatsApp-এ আপনার পছন্দের পণ্যের নাম লিখে পাঠান।
-                মূল্য, সাইজ, স্টক ও ডেলিভারি সম্পর্কে জেনে নিন।
-            </p>
-
-            <a
-                href="https://wa.me/8801618161443?text=আসসালামু%20আলাইকুম%2C%20আমি%20খাদিজা%20ফ্যাশনে%20অর্ডার%20করতে%20চাই।"
-                class="btn"
-                target="_blank"
-                rel="noopener"
-            >
-                <i class="fa-brands fa-whatsapp"></i>
-                এখনই অর্ডার করুন
-            </a>
-        </div>
-
-    </div>
+</div>
+</div>
 </section>
 
 </main>
 
-<!-- Footer -->
 <footer>
-    <div class="container">
-
-        <div class="footer-grid">
-
-            <div class="footer-brand">
-                <a href="#home" class="logo">
-                    <div class="logo-icon">
-                        <i class="fa-solid fa-crown"></i>
-                    </div>
-
-                    <div>
-                        <div class="logo-name">খাদিজা ফ্যাশন</div>
-                        <span class="logo-sub">KHADIJA FASHION</span>
-                    </div>
-                </a>
-
-                <p>
-                    পর্দা, সৌন্দর্য ও আভিজাত্যের সমন্বয়ে
-                    আপনার পছন্দের বোরকা, আবায়া ও হিজাবের
-                    কালেকশন খুঁজে নিন খাদিজা ফ্যাশনে।
-                </p>
-            </div>
-
-            <div>
-                <h3 class="footer-title">গুরুত্বপূর্ণ লিংক</h3>
-
-                <ul class="footer-links">
-                    <li><a href="#home">হোম</a></li>
-                    <li><a href="#shop">আমাদের কালেকশন</a></li>
-                    <li><a href="#about">আমাদের সম্পর্কে</a></li>
-                    <li>
-                        <a href="https://wa.me/8801618161443"
-                           target="_blank" rel="noopener">
-                            যোগাযোগ
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="footer-title">যোগাযোগ</h3>
-
-                <ul class="footer-links">
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        বরিশাল সদর, বাংলাদেশ
-                    </li>
-
-                    <li>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <a href="https://wa.me/8801618161443"
-                           target="_blank" rel="noopener">
-                            01618-161443
-                        </a>
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-truck-fast"></i>
-                        সারা বাংলাদেশে ডেলিভারি
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            © <span id="year">2026</span> <span>খাদিজা ফ্যাশন</span>।
-            সর্বস্বত্ব সংরক্ষিত।
-        </div>
-
-    </div>
+<div class="footer-logo">খাদিজা ফ্যাশন</div>
+<div>মার্জিত পোশাকে আভিজাত্যের ছোঁয়া</div>
+<div>ঠিকানা: বরিশাল সদর, বাংলাদেশ</div>
+<div>সারা বাংলাদেশে ডেলিভারি</div>
+<div>© <span id="year"></span> Khadija Fashion. সর্বস্বত্ব সংরক্ষিত।</div>
 </footer>
 
-<!-- Floating WhatsApp -->
-<a
-    href="https://wa.me/8801618161443?text=আসসালামু%20আলাইকুম%2C%20খাদিজা%20ফ্যাশন%20সম্পর্কে%20জানতে%20চাই।"
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener"
-    aria-label="WhatsApp-এ যোগাযোগ করুন"
->
-    <i class="fa-brands fa-whatsapp"></i>
+<a class="whatsapp-float" href="https://wa.me/8801618161443" target="_blank" rel="noopener" aria-label="WhatsApp">
+<i class="fa-brands fa-whatsapp"></i>
 </a>
 
+<!-- নিচের ইনস্টল বার -->
+<div class="install-bar" id="installBar">
+<div class="install-icon"><i class="fa-solid fa-leaf"></i></div>
+<div class="install-text">
+<strong>খাদিজা ফ্যাশন অ্যাপ</strong>
+<small>ফোনে ইনস্টল করুন, সহজে ব্যবহার করুন</small>
+</div>
+<button class="install-action" id="barInstall">ইনস্টল</button>
+<button class="dismiss-bar" id="barClose" aria-label="বন্ধ করুন">×</button>
+</div>
+
+<!-- অ্যাপ ইনস্টল পপআপ -->
+<div class="popup-overlay" id="installPopup" role="dialog" aria-modal="true">
+<div class="popup">
+
+<button class="popup-close" id="popupClose" aria-label="বন্ধ করুন">×</button>
+
+<div class="popup-header">
+<div class="popup-logo"><i class="fa-solid fa-leaf"></i></div>
+<h3>খাদিজা ফ্যাশন অ্যাপ</h3>
+<p>আপনার ফোনের হোম স্ক্রিন থেকেই আমাদের কালেকশন দেখুন এবং সহজে অর্ডার করুন।</p>
+</div>
+
+<div class="popup-body">
+<p id="installHelp">
+অ্যাপটি ইনস্টল করলে ওয়েবসাইটটি আপনার ফোনে অ্যাপের মতো খুলতে পারবেন।
+</p>
+
+<button class="btn popup-install" id="popupInstall">
+<i class="fa-solid fa-download"></i> এখনই ইনস্টল করুন
+</button>
+
+<button class="popup-later" id="popupLater">এখন নয়</button>
+</div>
+
+</div>
+</div>
+
 <script>
-/* Product category filter */
+document.getElementById("year").textContent = new Date().getFullYear();
 
-const filterButtons = document.querySelectorAll('.filter-btn');
-const productCards = document.querySelectorAll('.product-card');
-
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-
-        const selectedCategory = button.dataset.filter;
-
-        filterButtons.forEach(item => {
-            item.classList.remove('active');
-        });
-
-        button.classList.add('active');
-
-        productCards.forEach(card => {
-            const category = card.dataset.category;
-
-            if (
-                selectedCategory === 'all' ||
-                category === selectedCategory
-            ) {
-                card.classList.remove('hide');
-            } else {
-                card.classList.add('hide');
-            }
-        });
+/* পণ্যের ক্যাটাগরি ফিল্টার */
+document.querySelectorAll(".filter-btn").forEach(function(button){
+  button.addEventListener("click",function(){
+    document.querySelectorAll(".filter-btn").forEach(function(item){
+      item.classList.remove("active");
     });
+
+    button.classList.add("active");
+
+    document.querySelectorAll(".product-card").forEach(function(card){
+      card.style.display =
+        button.dataset.filter === "all" ||
+        card.dataset.category === button.dataset.filter
+        ? ""
+        : "none";
+    });
+  });
 });
 
-/* Automatic footer year */
+/* PWA Service Worker চালু */
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  window.addEventListener("load",function(){
+    navigator.serviceWorker.register("./service-worker.js")
+      .catch(function(error){
+        console.log("Service Worker registration failed:",error);
+      });
+  });
+}
 
-document.getElementById('year').textContent =
-    new Date().getFullYear();
+/* অ্যাপ ইনস্টল সিস্টেম */
+let deferredPrompt = null;
+
+const installBar = document.getElementById("installBar");
+const installPopup = document.getElementById("installPopup");
+const installHelp = document.getElementById("installHelp");
+
+function isInstalled(){
+  return window.matchMedia("(display-mode: standalone)").matches ||
+         window.navigator.standalone === true;
+}
+
+function openPopup(){
+  installPopup.classList.add("show");
+}
+
+function closePopup(){
+  installPopup.classList.remove("show");
+}
+
+function showBar(){
+  if (
+    !isInstalled() &&
+    localStorage.getItem("kf-install-dismissed") !== "yes"
+  ){
+    installBar.classList.add("show");
+  }
+}
+
+/* ব্রাউজার ইনস্টলযোগ্য অ্যাপ শনাক্ত করলে */
+window.addEventListener("beforeinstallprompt",function(event){
+  event.preventDefault();
+  deferredPrompt = event;
+
+  if (
+    !isInstalled() &&
+    !sessionStorage.getItem("kf-popup-seen")
+  ){
+    setTimeout(function(){
+      if(!isInstalled()){
+        openPopup();
+        sessionStorage.setItem("kf-popup-seen","yes");
+      }
+    },3000);
+  }
+});
+
+/* অ্যাপ ইনস্টল হয়ে গেলে */
+window.addEventListener("appinstalled",function(){
+  closePopup();
+  installBar.classList.remove("show");
+  localStorage.setItem("kf-installed","yes");
+  deferredPrompt = null;
+});
+
+/* ইনস্টল বাটন */
+async function installApp(){
+
+  if(deferredPrompt){
+
+    deferredPrompt.prompt();
+
+    const result = await deferredPrompt.userChoice;
+
+    if(result.outcome === "accepted"){
+      closePopup();
+      installBar.classList.remove("show");
+    }
+
+    deferredPrompt = null;
+
+  }else{
+
+    installHelp.innerHTML =
+      'এই ব্রাউজারে সরাসরি ইনস্টল অপশন পাওয়া যায়নি। ' +
+      'Android Chrome-এ ওয়েবসাইটটি খুলে উপরের <b>⋮</b> মেনু চাপুন। ' +
+      'তারপর <b>Install app</b> অথবা <b>Add to Home screen</b> নির্বাচন করুন। ' +
+      'ওয়েবসাইটটি HTTPS হোস্টিংয়ে প্রকাশিত থাকতে হবে।';
+
+    openPopup();
+  }
+}
+
+document.getElementById("barInstall")
+  .addEventListener("click",installApp);
+
+document.getElementById("popupInstall")
+  .addEventListener("click",installApp);
+
+/* ইনস্টল বার বন্ধ */
+document.getElementById("barClose").addEventListener("click",function(){
+  installBar.classList.remove("show");
+  localStorage.setItem("kf-install-dismissed","yes");
+});
+
+/* পপআপ বন্ধ */
+document.getElementById("popupClose").addEventListener("click",function(){
+  closePopup();
+  showBar();
+});
+
+document.getElementById("popupLater").addEventListener("click",function(){
+  closePopup();
+  showBar();
+});
+
+installPopup.addEventListener("click",function(event){
+  if(event.target === installPopup){
+    closePopup();
+    showBar();
+  }
+});
+
+/* প্রথমবার প্রবেশে পপআপ, পরে ইনস্টল বার */
+window.addEventListener("load",function(){
+
+  if(
+    isInstalled() ||
+    localStorage.getItem("kf-installed") === "yes"
+  ){
+    return;
+  }
+
+  if(
+    !localStorage.getItem("kf-install-dismissed") &&
+    !sessionStorage.getItem("kf-popup-seen")
+  ){
+    setTimeout(function(){
+      if(
+        !isInstalled() &&
+        !sessionStorage.getItem("kf-popup-seen")
+      ){
+        openPopup();
+        sessionStorage.setItem("kf-popup-seen","yes");
+      }
+    },3000);
+  }
+
+  setTimeout(showBar,6500);
+
+});
 </script>
 
 </body>
