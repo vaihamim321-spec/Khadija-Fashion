@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#641b32">
-<meta name="description" content="খাদিজা কুটিরশিল্প এন্ড জামদানি শপ — ঐতিহ্যবাহী জামদানি ও রুচিশীল পোশাকের কালেকশন।">
+<meta name="description" content="খাদিজা কুটিরশিল্প এন্ড জামদানি শপ। ঐতিহ্যবাহী জামদানি, শাড়ি ও রুচিশীল পোশাকের কালেকশন।">
+<link rel="icon" type="image/png" href="logo.png">
 
 <title>খাদিজা কুটিরশিল্প এন্ড জামদানি শপ</title>
 
@@ -24,428 +25,315 @@
   --cream:#fff9ef;
   --ink:#302127;
   --muted:#83747a;
-  --white:#fff;
   --border:#eee2d8;
   --green:#138b51;
+  --white:#fff;
   --shadow:0 12px 35px #40101b12;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{
   font-family:'Noto Sans Bengali',sans-serif;
-  color:var(--ink);
-  background:#fffdfa;
-  line-height:1.7;
+  color:var(--ink);background:#fffdfa;line-height:1.7;
 }
 button,input,textarea,select{font:inherit}
 button,a{-webkit-tap-highlight-color:transparent}
 a{text-decoration:none;color:inherit}
 button{cursor:pointer}
 img{max-width:100%}
-.container{width:min(1160px,92%);margin:auto}
+.container{width:min(1160px,93%);margin:auto}
+.hidden{display:none!important}
 
-/* Top notice */
 .topbar{
-  background:var(--wine);
-  color:#fff;
-  text-align:center;
-  padding:8px 12px;
-  font-size:12px;
+  background:var(--wine);color:white;text-align:center;
+  padding:8px 12px;font-size:12px;
 }
 .topbar span{color:#f0d28f}
 
-/* Header */
 header{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:#fffdf9ee;
-  backdrop-filter:blur(15px);
+  position:sticky;top:0;z-index:100;
+  background:#fffdf9ee;backdrop-filter:blur(15px);
   border-bottom:1px solid #eaded5;
 }
 .nav{
-  max-width:1200px;
-  min-height:78px;
-  padding:10px 20px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:18px;
+  max-width:1200px;min-height:76px;padding:10px 18px;
+  margin:auto;display:flex;align-items:center;
+  justify-content:space-between;gap:15px;
 }
-.brand{
-  display:flex;
-  align-items:center;
-  gap:11px;
-  min-width:0;
-}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
 .brand-icon{
-  height:49px;width:49px;flex-shrink:0;
-  display:grid;place-items:center;
-  border:2px solid var(--gold);
-  border-radius:50%;
-  color:var(--gold);
-  background:var(--wine);
-  font-size:23px;
+  width:49px;height:49px;flex-shrink:0;
+  display:grid;place-items:center;overflow:hidden;
+  border:2px solid var(--gold);border-radius:50%;
+  background:var(--wine);color:var(--gold);font-size:23px;
 }
+.brand-icon img{width:100%;height:100%;object-fit:contain}
 .brand-title{
-  font-weight:800;
-  font-size:19px;
-  color:var(--wine);
+  font-weight:800;font-size:17px;color:var(--wine);
   line-height:1.5;
 }
 .brand-title small{
-  display:block;
-  font-size:9px;
-  letter-spacing:.6px;
+  display:block;font-size:9px;letter-spacing:.3px;
   color:#94734a;
 }
-.nav-links{display:flex;align-items:center;gap:22px;font-size:13px;font-weight:600}
+.nav-links{display:flex;align-items:center;gap:19px;font-size:12px;font-weight:600}
 .nav-links a:hover{color:var(--gold)}
 .btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:11px 17px;
-  background:var(--wine);
-  color:#fff;
-  border:0;
-  border-radius:9px;
-  font-weight:700;
-  font-size:13px;
-  transition:.2s;
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:7px;padding:11px 15px;background:var(--wine);
+  color:white;border:0;border-radius:9px;
+  font-weight:700;font-size:12px;transition:.2s;
 }
 .btn:hover{background:var(--wine2);transform:translateY(-1px)}
 .btn-gold{background:var(--gold);color:#321522}
 .btn-green{background:var(--green)}
-.mobile-menu{display:none}
+.btn-light{background:#eee7e4;color:#523942}
 
-/* Hero */
 .hero{
-  position:relative;
   overflow:hidden;
-  background:
-    radial-gradient(ellipse at 88% 15%,#d6b67b45,transparent 35%),
-    linear-gradient(125deg,#fff7e9 0%,#fffdf8 52%,#f3e3d0 100%);
-}
-.hero:after{
-  content:"";
-  position:absolute;
-  width:330px;height:330px;
-  border:1px solid #c6a36340;
-  border-radius:50%;
-  right:-120px;bottom:-170px;
-  box-shadow:0 0 0 30px #c6a3630a,0 0 0 65px #c6a3630a;
+  background:radial-gradient(ellipse at 88% 15%,#d6b67b45,transparent 35%),
+  linear-gradient(125deg,#fff7e9,#fffdf8 52%,#f3e3d0);
 }
 .hero-grid{
-  position:relative;
-  z-index:1;
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:45px;
-  align-items:center;
-  padding-top:55px;
-  padding-bottom:60px;
-  min-height:510px;
+  display:grid;grid-template-columns:1.05fr .95fr;
+  gap:40px;align-items:center;padding-top:48px;
+  padding-bottom:55px;min-height:490px;
 }
-.eyebrow{
-  color:#96713a;
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:1px;
-}
+.eyebrow{color:#96713a;font-size:12px;font-weight:800;letter-spacing:.5px}
 .hero h1{
-  font-size:clamp(33px,4.6vw,55px);
-  line-height:1.38;
-  color:var(--wine);
-  margin:14px 0;
+  font-size:clamp(32px,4.5vw,53px);
+  line-height:1.4;color:var(--wine);margin:14px 0;
 }
 .hero h1 span{color:#b38a42}
-.hero p{color:#71616a;font-size:14px;max-width:510px;line-height:2}
-.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:23px}
-.hero-stats{display:flex;gap:22px;flex-wrap:wrap;margin-top:27px}
+.hero p{color:#71616a;font-size:13px;max-width:510px;line-height:2}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.hero-stats{display:flex;gap:15px;flex-wrap:wrap;margin-top:25px}
 .stat{font-size:11px;color:#69545c}
-.stat i{color:#b38a42;margin-right:5px}
-.hero-visual{
-  position:relative;
-  min-height:370px;
-  display:grid;
-  place-items:center;
-}
+.stat i{color:#b38a42;margin-right:4px}
+.hero-visual{position:relative;min-height:340px;display:grid;place-items:center}
 .hero-frame{
-  width:min(100%,400px);
-  height:365px;
-  position:relative;
-  overflow:hidden;
-  border-radius:190px 190px 22px 22px;
+  width:min(100%,390px);height:350px;position:relative;
+  overflow:hidden;border-radius:190px 190px 22px 22px;
   background:linear-gradient(145deg,#e6d0ad,#f8eee0);
-  border:8px solid #ffffffbd;
-  box-shadow:var(--shadow);
+  border:8px solid #ffffffbd;box-shadow:var(--shadow);
 }
 .hero-frame img{width:100%;height:100%;object-fit:cover}
-.hero-frame .hero-placeholder{
-  width:100%;height:100%;
-  display:grid;place-items:center;
-  text-align:center;padding:25px;color:var(--wine);
+.hero-placeholder{
+  width:100%;height:100%;display:grid;place-items:center;
+  text-align:center;padding:20px;color:var(--wine);
   background:linear-gradient(145deg,#ead8b8,#fff9ef);
 }
-.hero-placeholder i{font-size:75px;color:#ad8b53}
-.hero-placeholder strong{display:block;font-size:23px}
+.hero-placeholder i{font-size:70px;color:#ad8b53}
+.hero-placeholder strong{display:block;font-size:22px}
+.hero-placeholder span{font-size:12px}
 .hero-label{
-  position:absolute;bottom:20px;left:-8px;
-  background:#fff;
-  border:1px solid #eddfca;
-  padding:12px 17px;border-radius:12px;
-  box-shadow:var(--shadow);
-  font-size:12px;
+  position:absolute;bottom:17px;left:-5px;
+  background:white;border:1px solid #eddfca;
+  padding:10px 15px;border-radius:12px;
+  box-shadow:var(--shadow);font-size:11px;
 }
-.hero-label strong{display:block;color:var(--wine);font-size:15px}
+.hero-label strong{display:block;color:var(--wine);font-size:14px}
 
-/* Date strip */
-.date-strip{
-  background:var(--wine);
-  color:#fff;
-  padding:13px 0;
-}
-.date-inner{
-  display:flex;align-items:center;
-  justify-content:space-between;gap:12px;flex-wrap:wrap;
-}
+.date-strip{background:var(--wine);color:white;padding:12px 0}
+.date-inner{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .date-item{font-size:12px}
-.date-item i{color:var(--gold);margin-right:7px}
+.date-item i{color:var(--gold);margin-right:6px}
 .date-item strong{color:#f4dba7}
 
-/* Sections */
-section.section{padding:65px 0}
-.section-heading{text-align:center;margin-bottom:30px}
-.section-heading .eyebrow{display:block;margin-bottom:8px}
-.section-heading h2{font-size:clamp(25px,3.6vw,35px);color:var(--wine)}
-.section-heading p{font-size:13px;color:var(--muted);margin-top:7px}
-.section-line{
-  width:55px;height:3px;background:var(--gold);
-  border-radius:9px;margin:13px auto 0;
-}
+section.section{padding:58px 0}
+.section-heading{text-align:center;margin-bottom:28px}
+.section-heading .eyebrow{display:block;margin-bottom:7px}
+.section-heading h2{font-size:clamp(24px,3.5vw,34px);color:var(--wine)}
+.section-heading p{font-size:12px;color:var(--muted);margin-top:6px}
+.section-line{width:55px;height:3px;background:var(--gold);margin:12px auto 0;border-radius:9px}
 
-/* Categories */
-.categories{
-  display:flex;justify-content:center;gap:9px;
-  flex-wrap:wrap;margin-bottom:26px;
-}
+.categories{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:24px}
 .filter-btn{
-  background:#fff;border:1px solid var(--border);
-  color:#69515b;border-radius:30px;padding:9px 17px;
-  font-size:12px;
+  background:white;border:1px solid var(--border);color:#69515b;
+  border-radius:30px;padding:9px 15px;font-size:12px;
 }
-.filter-btn.active,.filter-btn:hover{
-  background:var(--wine);border-color:var(--wine);color:#fff;
-}
+.filter-btn.active,.filter-btn:hover{background:var(--wine);border-color:var(--wine);color:white}
 
-/* Products */
-.products{
-  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;
-}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .product-card{
-  min-width:0;background:#fff;border:1px solid var(--border);
-  border-radius:15px;overflow:hidden;transition:.25s;
+  min-width:0;background:white;border:1px solid var(--border);
+  border-radius:14px;overflow:hidden;transition:.25s;
 }
 .product-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.product-photo{
-  position:relative;height:285px;background:#f5ece1;overflow:hidden;
-}
-.product-photo img{
-  width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s;
-}
-.product-card:hover .product-photo img{transform:scale(1.035)}
+.product-photo{position:relative;height:275px;background:#f5ece1;overflow:hidden}
+.product-photo img{width:100%;height:100%;object-fit:cover;display:block}
 .product-photo .no-image{
-  display:grid;place-items:center;height:100%;color:#a78a66;
-  font-size:55px;
+  display:grid;place-items:center;height:100%;color:#a78a66;font-size:50px;
 }
 .product-badge{
-  position:absolute;top:12px;left:12px;
-  background:#fffdf5;color:var(--wine);
-  border:1px solid #e9d7b5;border-radius:5px;
-  font-size:10px;padding:4px 9px;font-weight:700;
+  position:absolute;top:10px;left:10px;background:#fffdf5;
+  color:var(--wine);border:1px solid #e9d7b5;border-radius:5px;
+  font-size:10px;padding:4px 8px;font-weight:700;
 }
-.product-info{padding:16px}
+.product-info{padding:14px}
 .product-category{font-size:10px;color:#a07c42;font-weight:700}
-.product-info h3{font-size:17px;color:var(--wine);margin:5px 0}
-.product-desc{font-size:12px;color:var(--muted);min-height:43px;line-height:1.8}
+.product-info h3{font-size:16px;color:var(--wine);margin:5px 0}
+.product-desc{font-size:11px;color:var(--muted);min-height:40px;line-height:1.8}
 .product-bottom{
-  border-top:1px solid #f1e8df;margin-top:13px;padding-top:12px;
+  border-top:1px solid #f1e8df;margin-top:12px;padding-top:12px;
   display:flex;align-items:center;justify-content:space-between;gap:8px;
 }
-.price{font-size:18px;font-weight:800;color:var(--wine)}
-.price small{font-size:10px;font-weight:500;color:var(--muted)}
+.price{font-size:17px;font-weight:800;color:var(--wine)}
 .order-btn{
   display:inline-flex;align-items:center;justify-content:center;gap:5px;
-  background:#12884e;color:white;border-radius:7px;padding:9px 11px;
+  background:#12884e;color:white;border-radius:7px;padding:9px 10px;
   font-size:11px;font-weight:700;
 }
 .empty-state{
-  grid-column:1/-1;padding:40px 15px;text-align:center;
+  grid-column:1/-1;padding:35px 15px;text-align:center;
   border:1px dashed var(--border);border-radius:14px;color:var(--muted);
 }
-
-/* Loading/error */
-.notice{
-  margin:0 auto 18px;padding:10px 14px;border-radius:9px;
-  font-size:12px;background:#fff3dc;color:#754d0c;
-}
+.notice{margin:0 auto 17px;padding:10px 13px;border-radius:9px;font-size:12px;background:#fff3dc;color:#754d0c}
 .notice.error{background:#fff0f0;color:#a51f32}
 .notice.success{background:#eaf8ee;color:#146c3b}
 
-/* About */
 .about-section{background:var(--cream)}
-.about-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center;
-}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .about-art{
-  min-height:330px;border-radius:18px;overflow:hidden;
+  min-height:320px;border-radius:18px;overflow:hidden;
   background:linear-gradient(145deg,#ead7b8,#fff5e6);
   display:grid;place-items:center;color:var(--wine);
-  border:8px solid #fff;
+  border:8px solid white;
 }
-.about-art i{font-size:100px;color:#b6965b}
-.about-copy h2{font-size:32px;color:var(--wine);line-height:1.5;margin:8px 0 14px}
-.about-copy p{font-size:13px;line-height:2;color:#75646a}
-.feature{display:flex;gap:12px;margin-top:19px;align-items:flex-start}
+.about-art i{font-size:90px;color:#b6965b}
+.about-copy h2{font-size:30px;color:var(--wine);line-height:1.5;margin:8px 0 13px}
+.about-copy>p{font-size:12px;line-height:2;color:#75646a}
+.feature{display:flex;gap:11px;margin-top:17px;align-items:flex-start}
 .feature-icon{
-  width:39px;height:39px;flex-shrink:0;border-radius:11px;
+  width:38px;height:38px;flex-shrink:0;border-radius:10px;
   background:#f0e2c8;color:var(--wine);display:grid;place-items:center;
 }
-.feature strong{font-size:13px;color:var(--wine)}
-.feature p{font-size:11px}
+.feature strong{font-size:12px;color:var(--wine)}
+.feature p{font-size:11px;color:var(--muted)}
 
-/* Social links */
-.social-section{padding:45px 0!important}
+.social-section{padding:42px 0!important}
 .social-box{
   border-radius:18px;background:linear-gradient(125deg,#5c182d,#8c3049);
-  color:white;text-align:center;padding:35px 20px;
+  color:white;text-align:center;padding:34px 18px;
 }
-.social-box h2{font-size:27px;margin-bottom:7px}
-.social-box p{font-size:12px;color:#f0dfe3;margin-bottom:20px}
+.social-box h2{font-size:25px;margin-bottom:7px}
+.social-box p{font-size:12px;color:#f0dfe3;margin-bottom:19px}
 .social-links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.social-links a{background:#fff;color:var(--wine);border-radius:8px;padding:10px 15px;font-size:12px;font-weight:700}
+.social-links a{background:white;color:var(--wine);border-radius:8px;padding:10px 14px;font-size:12px;font-weight:700}
 
-/* Footer */
-footer{background:#28151c;color:#f5e8e5;text-align:center;padding:29px 15px;font-size:11px;line-height:2.1}
+footer{background:#28151c;color:#f5e8e5;text-align:center;padding:27px 12px;font-size:11px;line-height:2.1}
 .footer-brand{font-size:21px;font-weight:800;color:var(--gold)}
 .footer-en{font-size:10px;color:#cbb8b6}
-.footer-social{display:flex;gap:17px;justify-content:center;margin:13px 0}
-.footer-social a{font-size:17px;color:#e4c57f}
+.footer-social{display:flex;gap:17px;justify-content:center;margin:12px 0}
+.footer-social a{font-size:18px;color:#e4c57f}
+.admin-entry{display:inline-block;margin-top:8px;padding:5px 9px;color:#bba6a9;font-size:10px;background:transparent;border:0}
 
-/* Floating WhatsApp */
 .whatsapp-float{
-  position:fixed;right:17px;bottom:18px;z-index:110;
-  width:53px;height:53px;border-radius:50%;
-  display:grid;place-items:center;background:#1fbe62;
-  color:white;font-size:27px;box-shadow:0 5px 18px #0003;
+  position:fixed;right:16px;bottom:17px;z-index:110;
+  width:53px;height:53px;border-radius:50%;display:grid;
+  place-items:center;background:#1fbe62;color:white;font-size:27px;
+  box-shadow:0 5px 18px #0003;
 }
 
-/* Admin entry: intentionally small, but not a security measure */
-.admin-entry{
-  display:inline-block;margin-top:8px;padding:4px 8px;
-  color:#bba6a9;font-size:10px;cursor:pointer;
-  background:transparent;border:0;
-}
-
-/* Modals */
 .overlay{
   position:fixed;inset:0;z-index:500;background:#16090dcc;
-  display:none;align-items:center;justify-content:center;padding:14px;
+  display:none;align-items:center;justify-content:center;padding:12px;
 }
 .overlay.show{display:flex}
 .modal{
-  width:100%;max-width:460px;max-height:92dvh;overflow:auto;
-  background:#fffdfa;border-radius:17px;box-shadow:0 20px 80px #0004;
+  width:100%;max-width:470px;max-height:92dvh;overflow:auto;
+  background:#fffdfa;border-radius:16px;box-shadow:0 20px 80px #0004;
 }
+.modal.large{max-width:780px}
 .modal-head{
-  background:var(--wine);color:white;padding:19px 20px;
+  background:var(--wine);color:white;padding:16px 18px;
   display:flex;justify-content:space-between;align-items:center;gap:12px;
+  position:sticky;top:0;z-index:2;
 }
-.modal-head h3{font-size:17px}
-.close-btn{background:#ffffff20;border:0;color:white;border-radius:7px;width:34px;height:34px;font-size:22px}
-.modal-body{padding:20px}
-.form-group{margin-bottom:13px}
+.modal-head h3{font-size:16px}
+.close-btn{
+  background:#ffffff20;border:0;color:white;border-radius:7px;
+  width:34px;height:34px;font-size:22px;flex-shrink:0;
+}
+.modal-body{padding:18px}
+.form-group{margin-bottom:12px}
 .form-group label{display:block;font-size:12px;font-weight:700;margin-bottom:5px;color:#634b54}
 .form-group input,.form-group textarea,.form-group select{
-  width:100%;padding:11px 12px;border:1px solid #e7d8d0;
-  border-radius:8px;background:#fff;font-size:13px;outline:none;
+  width:100%;padding:10px 11px;border:1px solid #e7d8d0;
+  border-radius:8px;background:white;font-size:13px;outline:none;
 }
 .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--gold)}
 .form-group textarea{resize:vertical;min-height:75px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:11px}
 .form-help{font-size:11px;color:var(--muted);margin:7px 0 12px;line-height:1.8}
-.form-actions{display:flex;gap:9px;flex-wrap:wrap}
+.form-actions{display:flex;gap:8px;flex-wrap:wrap}
 .form-actions .btn{flex:1}
-.btn-light{background:#eee7e4;color:#523942}
-.admin-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:17px}
+.admin-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}
 .admin-toolbar .btn{font-size:11px;padding:9px 11px}
 .admin-list{display:grid;gap:9px}
 .admin-row{
-  display:flex;align-items:center;gap:10px;padding:10px;
+  display:flex;align-items:center;gap:9px;padding:9px;
   border:1px solid var(--border);border-radius:10px;
 }
-.admin-row img{width:51px;height:57px;object-fit:cover;border-radius:6px;background:#f3e7d9}
-.admin-row .row-info{flex:1;min-width:0}
-.admin-row strong{display:block;font-size:12px;overflow-wrap:anywhere}
-.admin-row small{font-size:11px;color:var(--muted)}
+.admin-row img,.admin-image-placeholder{
+  width:48px;height:54px;object-fit:cover;border-radius:6px;
+  background:#f3e7d9;flex-shrink:0;
+}
+.admin-image-placeholder{display:grid;place-items:center;color:#a78a66}
+.row-info{flex:1;min-width:0}
+.row-info strong{display:block;font-size:12px;overflow-wrap:anywhere}
+.row-info small{font-size:10px;color:var(--muted)}
 .row-actions{display:flex;gap:5px}
 .icon-btn{border:0;border-radius:6px;padding:7px 9px;background:#f3e8db;color:var(--wine)}
 .icon-btn.delete{background:#ffeded;color:#b52232}
 .status-line{font-size:11px;color:var(--muted);margin-bottom:12px;overflow-wrap:anywhere}
 .admin-section-title{font-size:14px;color:var(--wine);margin:20px 0 12px;padding-top:13px;border-top:1px solid var(--border)}
-.hidden{display:none!important}
 
-/* Mobile */
 @media(max-width:850px){
   .nav-links{display:none}
-  .mobile-menu{display:inline-flex}
-  .hero-grid{gap:18px;grid-template-columns:1fr 0.85fr}
-  .hero-frame{height:310px}
-  .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-  .product-photo{height:240px}
+  .hero-grid{gap:18px;grid-template-columns:1fr .85fr}
+  .hero-frame{height:300px}
+  .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+  .product-photo{height:230px}
 }
 @media(max-width:560px){
-  .container{width:93%}
-  .nav{padding:9px 12px;min-height:66px;gap:7px}
-  .brand{gap:7px}
-  .brand-icon{width:39px;height:39px;font-size:18px}
-  .brand-title{font-size:14px}
-  .brand-title small{font-size:7px}
-  .nav .btn{font-size:10px;padding:9px 10px}
   .topbar{font-size:10px}
-  .hero-grid{grid-template-columns:1fr;padding-top:35px;padding-bottom:30px;gap:10px}
-  .hero h1{font-size:34px}
+  .nav{padding:8px 10px;min-height:63px;gap:6px}
+  .brand{gap:7px}
+  .brand-icon{width:38px;height:38px}
+  .brand-title{font-size:12px}
+  .brand-title small{font-size:6px}
+  .nav>.btn{font-size:10px;padding:9px 10px}
+  .hero-grid{grid-template-columns:1fr;padding-top:30px;padding-bottom:30px;gap:10px}
+  .hero h1{font-size:32px}
   .hero p{font-size:12px}
-  .hero-visual{min-height:260px;margin-top:8px}
-  .hero-frame{height:260px;width:80%;max-width:310px}
-  .hero-label{left:0;bottom:12px}
-  .hero-stats{gap:11px}
-  .stat{font-size:10px}
+  .hero-visual{min-height:245px;margin-top:6px}
+  .hero-frame{height:245px;width:78%;max-width:300px}
+  .hero-label{left:0;bottom:9px;font-size:10px}
+  .hero-stats{gap:9px}
+  .stat{font-size:9px}
   .date-item{font-size:10px}
-  section.section{padding:43px 0}
-  .section-heading{margin-bottom:22px}
-  .section-heading h2{font-size:25px}
-  .filter-btn{padding:8px 12px;font-size:11px}
+  section.section{padding:40px 0}
+  .section-heading{margin-bottom:20px}
+  .section-heading h2{font-size:23px}
+  .filter-btn{padding:8px 10px;font-size:10px}
   .products{gap:9px}
-  .product-photo{height:175px}
-  .product-info{padding:10px}
-  .product-info h3{font-size:13px}
-  .product-desc{font-size:10px;min-height:49px}
-  .product-bottom{align-items:flex-start;flex-direction:column;gap:8px}
+  .product-photo{height:170px}
+  .product-info{padding:9px}
+  .product-info h3{font-size:12px}
+  .product-desc{font-size:10px;min-height:48px}
+  .product-bottom{align-items:flex-start;flex-direction:column;gap:7px}
   .price{font-size:15px}
-  .order-btn{font-size:10px;padding:8px 10px}
-  .product-badge{font-size:9px;top:7px;left:7px;padding:3px 6px}
-  .about-grid{grid-template-columns:1fr;gap:22px}
-  .about-art{min-height:230px}
-  .about-copy h2{font-size:26px}
-  .social-box{padding:27px 13px}
-  .social-box h2{font-size:22px}
+  .order-btn{font-size:10px;padding:8px 9px}
+  .about-grid{grid-template-columns:1fr;gap:20px}
+  .about-art{min-height:220px}
+  .about-copy h2{font-size:25px}
+  .social-box{padding:25px 12px}
+  .social-box h2{font-size:21px}
   .form-row{grid-template-columns:1fr}
-  .modal-body{padding:15px}
-  .whatsapp-float{bottom:15px;right:13px}
+  .modal-body{padding:14px}
+  .whatsapp-float{right:12px;bottom:13px}
+  .admin-row{flex-wrap:wrap}
 }
 </style>
 </head>
@@ -460,10 +348,13 @@ footer{background:#28151c;color:#f5e8e5;text-align:center;padding:29px 15px;font
 <header>
   <div class="nav">
     <a href="#home" class="brand">
-      <div class="brand-icon"><i class="fa-solid fa-spa"></i></div>
+      <div class="brand-icon">
+        <img src="logo.png" alt="খাদিজা কুটিরশিল্প লোগো"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<i class=&quot;fa-solid fa-spa&quot;></i>'">
+      </div>
       <div class="brand-title">
         খাদিজা কুটিরশিল্প
-        <small>KHADIJA KUTIRSHILPO & JAMdANI SHOP</small>
+        <small>KHADIJA KUTIRSHILPO &amp; JAMDANI SHOP</small>
       </div>
     </a>
 
@@ -474,163 +365,152 @@ footer{background:#28151c;color:#f5e8e5;text-align:center;padding:29px 15px;font
       <a href="#social">সোশ্যাল মিডিয়া</a>
     </nav>
 
-    <a class="btn" id="headerOrder" href="#products">
+    <a class="btn" href="#products">
       <i class="fa-solid fa-bag-shopping"></i> অর্ডার
     </a>
   </div>
 </header>
 
 <main>
-  <section class="hero" id="home">
-    <div class="container hero-grid">
-      <div>
-        <div class="eyebrow">ঐতিহ্য • আভিজাত্য • ভালোবাসা</div>
-        <h1>জামদানির ঐতিহ্যে<br>আপনার <span>আভিজাত্য</span></h1>
-        <p id="heroDescription">
-          বাংলার ঐতিহ্যবাহী জামদানি, রুচিশীল পোশাক ও কুটিরশিল্পের সুন্দর কালেকশন। আপনার পছন্দের পণ্য বেছে নিন, অর্ডার করুন সহজেই।
-        </p>
-        <div class="hero-actions">
-          <a class="btn" href="#products">কালেকশন দেখুন <i class="fa-solid fa-arrow-right"></i></a>
-          <a class="btn btn-gold" id="heroYoutube" href="#social" target="_blank" rel="noopener">
-            <i class="fa-brands fa-youtube"></i> আমাদের ভিডিও
-          </a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat"><i class="fa-solid fa-check-circle"></i> বাছাই করা পণ্য</div>
-          <div class="stat"><i class="fa-solid fa-truck-fast"></i> দেশজুড়ে ডেলিভারি</div>
-          <div class="stat"><i class="fa-solid fa-heart"></i> যত্নের সঙ্গে সেবা</div>
-        </div>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">ঐতিহ্য • আভিজাত্য • ভালোবাসা</div>
+      <h1>জামদানির ঐতিহ্যে<br>আপনার <span>আভিজাত্য</span></h1>
+      <p id="heroDescription">বাংলার ঐতিহ্যবাহী জামদানি, রুচিশীল পোশাক ও কুটিরশিল্পের সুন্দর কালেকশন। আপনার পছন্দের পণ্য বেছে নিন, অর্ডার করুন সহজেই।</p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#products">কালেকশন দেখুন <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn btn-gold" id="heroYoutube" href="#social" target="_blank" rel="noopener">
+          <i class="fa-brands fa-youtube"></i> আমাদের ভিডিও
+        </a>
       </div>
 
-      <div class="hero-visual">
-        <div class="hero-frame" id="heroFrame">
-          <div class="hero-placeholder">
-            <div>
-              <i class="fa-solid fa-spa"></i>
-              <strong>জামদানির সৌন্দর্য</strong>
-              <span>ঐতিহ্য থাকুক আপনার সাজে</span>
-            </div>
+      <div class="hero-stats">
+        <div class="stat"><i class="fa-solid fa-check-circle"></i> বাছাই করা পণ্য</div>
+        <div class="stat"><i class="fa-solid fa-truck-fast"></i> দেশজুড়ে ডেলিভারি</div>
+        <div class="stat"><i class="fa-solid fa-heart"></i> যত্নের সঙ্গে সেবা</div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-frame" id="heroFrame">
+        <div class="hero-placeholder">
+          <div>
+            <i class="fa-solid fa-spa"></i>
+            <strong>জামদানির সৌন্দর্য</strong>
+            <span>ঐতিহ্য থাকুক আপনার সাজে</span>
           </div>
         </div>
-        <div class="hero-label">
-          <strong>খাঁটি বাঙালিয়ানার ছোঁয়া</strong>
-          ঐতিহ্য থেকে অনুপ্রাণিত
-        </div>
       </div>
-    </div>
-  </section>
-
-  <div class="date-strip">
-    <div class="container date-inner">
-      <div class="date-item"><i class="fa-regular fa-calendar"></i><strong id="banglaDate">তারিখ লোড হচ্ছে...</strong></div>
-      <div class="date-item"><i class="fa-solid fa-clock"></i><strong id="liveClock">সময় লোড হচ্ছে...</strong></div>
-      <div class="date-item"><i class="fa-solid fa-sun"></i><strong id="dayName">বার লোড হচ্ছে...</strong></div>
+      <div class="hero-label">
+        <strong>খাঁটি বাঙালিয়ানার ছোঁয়া</strong>
+        ঐতিহ্য থেকে অনুপ্রাণিত
+      </div>
     </div>
   </div>
+</section>
 
-  <section class="section" id="products">
-    <div class="container">
-      <div class="section-heading">
-        <span class="eyebrow">OUR COLLECTION</span>
-        <h2>আমাদের পছন্দের কালেকশন</h2>
-        <p>আপনার রুচি ও পছন্দের পণ্যটি খুঁজে নিন</p>
-        <div class="section-line"></div>
-      </div>
+<div class="date-strip">
+  <div class="container date-inner">
+    <div class="date-item"><i class="fa-regular fa-calendar"></i><strong id="banglaDate">তারিখ</strong></div>
+    <div class="date-item"><i class="fa-solid fa-clock"></i><strong id="liveClock">সময়</strong></div>
+    <div class="date-item"><i class="fa-solid fa-sun"></i><strong id="dayName">বার</strong></div>
+  </div>
+</div>
 
-      <div id="storeNotice" class="notice hidden"></div>
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">OUR COLLECTION</span>
+      <h2>আমাদের পছন্দের কালেকশন</h2>
+      <p>আপনার রুচি ও পছন্দের পণ্যটি খুঁজে নিন</p>
+      <div class="section-line"></div>
+    </div>
 
-      <div class="categories" id="categoryFilters">
-        <button class="filter-btn active" data-filter="all">সব পণ্য</button>
-        <button class="filter-btn" data-filter="জামদানি">জামদানি</button>
-        <button class="filter-btn" data-filter="শাড়ি">শাড়ি</button>
-        <button class="filter-btn" data-filter="থ্রি-পিস">থ্রি-পিস</button>
-        <button class="filter-btn" data-filter="কুটিরশিল্প">কুটিরশিল্প</button>
-        <button class="filter-btn" data-filter="অন্যান্য">অন্যান্য</button>
-      </div>
+    <div id="storeNotice" class="notice hidden"></div>
 
-      <div class="products" id="productsGrid">
-        <div class="empty-state">
-          <i class="fa-solid fa-spinner fa-spin"></i><br>
-          পণ্য লোড হচ্ছে...
-        </div>
+    <div class="categories" id="categoryFilters">
+      <button class="filter-btn active" data-filter="all">সব পণ্য</button>
+      <button class="filter-btn" data-filter="জামদানি">জামদানি</button>
+      <button class="filter-btn" data-filter="শাড়ি">শাড়ি</button>
+      <button class="filter-btn" data-filter="থ্রি-পিস">থ্রি-পিস</button>
+      <button class="filter-btn" data-filter="কুটিরশিল্প">কুটিরশিল্প</button>
+      <button class="filter-btn" data-filter="অন্যান্য">অন্যান্য</button>
+    </div>
+
+    <div class="products" id="productsGrid">
+      <div class="empty-state"><i class="fa-solid fa-spinner fa-spin"></i><br>পণ্য লোড হচ্ছে...</div>
+    </div>
+  </div>
+</section>
+
+<section class="section about-section" id="about">
+  <div class="container about-grid">
+    <div class="about-art">
+      <div style="text-align:center">
+        <i class="fa-solid fa-hands-holding-circle"></i>
+        <h3 style="font-size:22px;margin-top:12px">দেশীয় ঐতিহ্য, আপন রুচি</h3>
+        <p style="font-size:12px">কুটিরশিল্প ও জামদানির প্রতি ভালোবাসা</p>
       </div>
     </div>
-  </section>
 
-  <section class="section about-section" id="about">
-    <div class="container about-grid">
-      <div class="about-art">
-        <div style="text-align:center">
-          <i class="fa-solid fa-hands-holding-circle"></i>
-          <h3 style="font-size:23px;margin-top:12px">দেশীয় ঐতিহ্য, আপন রুচি</h3>
-          <p style="font-size:12px">কুটিরশিল্প ও জামদানির প্রতি ভালোবাসা</p>
-        </div>
+    <div class="about-copy">
+      <div class="eyebrow">আমাদের গল্প</div>
+      <h2>ঐতিহ্যকে ভালোবাসি, সৌন্দর্যকে ছড়িয়ে দিই</h2>
+      <p id="aboutDescription">খাদিজা কুটিরশিল্প এন্ড জামদানি শপে আপনাকে স্বাগতম। দেশীয় ঐতিহ্য, নান্দনিক ডিজাইন ও রুচিশীল পণ্যের মাধ্যমে আপনার কেনাকাটাকে সহজ ও আনন্দময় করাই আমাদের লক্ষ্য।</p>
+
+      <div class="feature">
+        <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+        <div><strong>রুচিশীল কালেকশন</strong><p>পছন্দের ডিজাইন ও পণ্য সহজেই বেছে নিন।</p></div>
       </div>
-
-      <div class="about-copy">
-        <div class="eyebrow">আমাদের গল্প</div>
-        <h2>ঐতিহ্যকে ভালোবাসি, সৌন্দর্যকে ছড়িয়ে দিই</h2>
-        <p id="aboutDescription">
-          খাদিজা কুটিরশিল্প এন্ড জামদানি শপে আপনাকে স্বাগতম। দেশীয় ঐতিহ্য, নান্দনিক ডিজাইন ও রুচিশীল পণ্যের মাধ্যমে আপনার কেনাকাটাকে সহজ ও আনন্দময় করাই আমাদের লক্ষ্য।
-        </p>
-
-        <div class="feature">
-          <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
-          <div><strong>রুচিশীল কালেকশন</strong><p>পছন্দের ডিজাইন ও পণ্য সহজেই বেছে নিন।</p></div>
-        </div>
-
-        <div class="feature">
-          <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
-          <div><strong>ডেলিভারি সুবিধা</strong><p>ডেলিভারি চার্জ ও সময় জানতে আমাদের সঙ্গে যোগাযোগ করুন।</p></div>
-        </div>
-
-        <div class="feature">
-          <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
-          <div><strong>সহজ যোগাযোগ</strong><p>পণ্য সম্পর্কে জানতে WhatsApp-এ মেসেজ দিন।</p></div>
-        </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <div><strong>ডেলিভারি সুবিধা</strong><p>ডেলিভারি চার্জ ও সময় জানতে আমাদের সঙ্গে যোগাযোগ করুন।</p></div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+        <div><strong>সহজ যোগাযোগ</strong><p>পণ্য সম্পর্কে জানতে WhatsApp-এ মেসেজ দিন।</p></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section social-section" id="social">
-    <div class="container">
-      <div class="social-box">
-        <h2>আমাদের সঙ্গে যুক্ত থাকুন</h2>
-        <p>নতুন কালেকশন, পণ্যের আপডেট ও ভিডিও দেখতে আমাদের সোশ্যাল মিডিয়ায় যুক্ত হোন।</p>
-        <div class="social-links">
-          <a id="facebookLink" href="#" target="_blank" rel="noopener" class="hidden">
-            <i class="fa-brands fa-facebook"></i> Facebook পেজ
-          </a>
-          <a id="youtubeLink" href="#" target="_blank" rel="noopener" class="hidden">
-            <i class="fa-brands fa-youtube"></i> YouTube চ্যানেল
-          </a>
-          <a id="socialWhatsApp" href="#" target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp"></i> WhatsApp
-          </a>
-        </div>
+<section class="section social-section" id="social">
+  <div class="container">
+    <div class="social-box">
+      <h2>আমাদের সঙ্গে যুক্ত থাকুন</h2>
+      <p>নতুন কালেকশন, পণ্যের আপডেট ও ভিডিও দেখতে আমাদের সোশ্যাল মিডিয়ায় যুক্ত হোন।</p>
+      <div class="social-links">
+        <a id="facebookLink" href="#" target="_blank" rel="noopener" class="hidden"><i class="fa-brands fa-facebook"></i> Facebook পেজ</a>
+        <a id="youtubeLink" href="#" target="_blank" rel="noopener" class="hidden"><i class="fa-brands fa-youtube"></i> YouTube চ্যানেল</a>
+        <a id="socialWhatsApp" href="#social"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 </main>
 
 <footer>
   <div class="footer-brand">খাদিজা কুটিরশিল্প</div>
   <div class="footer-en">KHADIJA KUTIRSHILPO &amp; JAMDANI SHOP</div>
   <div>ঐতিহ্যের বুননে আভিজাত্য</div>
+
   <div class="footer-social">
-    <a id="footerFacebook" href="#" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-    <a id="footerYoutube" href="#" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-    <a id="footerWhatsApp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a id="footerFacebook" href="#social" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+    <a id="footerYoutube" href="#social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    <a id="footerWhatsApp" href="#social" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
   </div>
+
   <div>© <span id="year"></span> খাদিজা কুটিরশিল্প এন্ড জামদানি শপ</div>
   <button class="admin-entry" id="openAdmin">অ্যাডমিন লগইন</button>
 </footer>
 
-<a class="whatsapp-float" id="floatingWhatsApp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp-এ যোগাযোগ করুন">
+<a class="whatsapp-float" id="floatingWhatsApp" href="#social" target="_blank" rel="noopener" aria-label="WhatsApp">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-<!-- Admin login -->
+<!-- Admin Login -->
 <div class="overlay" id="loginOverlay">
   <div class="modal">
     <div class="modal-head">
@@ -649,17 +529,17 @@ footer{background:#28151c;color:#f5e8e5;text-align:center;padding:29px 15px;font
           <i class="fa-solid fa-right-to-bracket"></i> লগইন করুন
         </button>
       </form>
-      <p class="form-help" style="margin-top:13px">
-        প্রথমবারের ডেমো পাসওয়ার্ড: <b>123456</b><br>
-        প্রকাশের আগে অবশ্যই পরিবর্তন করুন। প্রকৃত নিরাপত্তার জন্য Firebase Authentication ও Firestore Rules সেট করুন।
+      <p class="form-help" style="margin-top:12px">
+        ডেমো পাসওয়ার্ড: <b>123456</b><br>
+        প্রকাশের আগে নিরাপদ সার্ভার-ভিত্তিক লগইন সেটআপ করুন।
       </p>
     </div>
   </div>
 </div>
 
-<!-- Admin dashboard -->
+<!-- Admin Dashboard -->
 <div class="overlay" id="adminOverlay">
-  <div class="modal" style="max-width:780px">
+  <div class="modal large">
     <div class="modal-head">
       <div>
         <h3><i class="fa-solid fa-gauge-high"></i> শপ কন্ট্রোল প্যানেল</h3>
@@ -682,11 +562,11 @@ footer{background:#28151c;color:#f5e8e5;text-align:center;padding:29px 15px;font
       <form id="settingsForm">
         <div class="form-group">
           <label>দোকানের নাম</label>
-          <input name="shopName" value="খাদিজা কুটিরশিল্প এন্ড জামদানি শপ" required>
+          <input name="shopName" required>
         </div>
         <div class="form-group">
           <label>ইংরেজি নাম</label>
-          <input name="englishName" value="Khadija Kutirshilpo & Jamdani Shop" required>
+          <input name="englishName" required>
         </div>
         <div class="form-group">
           <label>Facebook পেজের লিংক</label>
@@ -697,7 +577,7 @@ footer{background:#28151c;color:#f5e8e5;text-align:center;padding:29px 15px;font
           <input name="youtube" type="url" placeholder="https://www.youtube.com/@yourchannel">
         </div>
         <div class="form-group">
-          <label>WhatsApp নম্বর (দেশের কোডসহ, শুধু সংখ্যা)</label>
+          <label>WhatsApp নম্বর (দেশের কোডসহ)</label>
           <input name="whatsapp" inputmode="numeric" placeholder="8801XXXXXXXXX">
         </div>
         <div class="form-group">
@@ -709,7 +589,7 @@ footer{background:#28151c;color:#f5e8e5;text-align:center;padding:29px 15px;font
           <textarea name="aboutDescription"></textarea>
         </div>
         <div class="form-group">
-          <label>হোমপেজের বড় ছবির লিংক (ঐচ্ছিক)</label>
+          <label>হোমপেজের বড় ছবির URL</label>
           <input name="heroImage" type="url" placeholder="https://example.com/image.jpg">
         </div>
         <button class="btn" type="submit" style="width:100%">
@@ -731,16 +611,14 @@ footer{background:#28151c;color:#f5e8e5;text-align:center;padding:29px 15px;font
           <label>নতুন পাসওয়ার্ড আবার লিখুন</label>
           <input name="confirmPassword" type="password" minlength="8" required autocomplete="new-password">
         </div>
-        <div class="form-help">
-          সতর্কতা: এই নমুনার পাসওয়ার্ড-ব্যবস্থা ব্রাউজারের কোডে রয়েছে। এটি উৎপাদন পর্যায়ের নিরাপদ অ্যাডমিন লগইন নয়। নিচের নির্দেশনা অনুসারে Firebase Authentication ব্যবহার করুন।
-        </div>
+        <p class="form-help">এটি ব্রাউজারভিত্তিক ডেমো পাসওয়ার্ড ব্যবস্থা। এটি প্রকৃত নিরাপদ অনলাইন অ্যাডমিন লগইন নয়।</p>
         <button class="btn btn-gold" type="submit" style="width:100%">পাসওয়ার্ড পরিবর্তন</button>
       </form>
     </div>
   </div>
 </div>
 
-<!-- Add/edit product -->
+<!-- Add/Edit Product -->
 <div class="overlay" id="productOverlay">
   <div class="modal">
     <div class="modal-head">
@@ -753,7 +631,7 @@ footer{background:#28151c;color:#f5e8e5;text-align:center;padding:29px 15px;font
 
         <div class="form-group">
           <label>পণ্যের নাম *</label>
-          <input name="name" required maxlength="100" placeholder="যেমন: ঐতিহ্যবাহী জামদানি শাড়ি">
+          <input name="name" required maxlength="100" placeholder="ঐতিহ্যবাহী জামদানি শাড়ি">
         </div>
 
         <div class="form-row">
@@ -776,17 +654,17 @@ footer{background:#28151c;color:#f5e8e5;text-align:center;padding:29px 15px;font
         <div class="form-group">
           <label>ছবির URL *</label>
           <input name="image" type="url" required placeholder="https://example.com/product.jpg">
-          <p class="form-help">ছবিটি অনলাইনে প্রকাশিত হতে হবে। এই সংস্করণে ছবি আপলোড নয়, ছবির লিংক ব্যবহার করা হয়।</p>
+          <p class="form-help">এই সংস্করণে অনলাইনে থাকা ছবির URL ব্যবহার করতে হবে।</p>
         </div>
 
         <div class="form-group">
-          <label>ছবির বিকল্প লেখা / ব্যাজ</label>
-          <input name="badge" maxlength="35" placeholder="যেমন: নতুন কালেকশন">
+          <label>পণ্যের ব্যাজ</label>
+          <input name="badge" maxlength="35" placeholder="নতুন কালেকশন">
         </div>
 
         <div class="form-group">
           <label>পণ্যের বিবরণ</label>
-          <textarea name="description" maxlength="400" placeholder="পণ্যের কাপড়, রং, সাইজ ইত্যাদি"></textarea>
+          <textarea name="description" maxlength="400" placeholder="পণ্যের বিবরণ লিখুন"></textarea>
         </div>
 
         <div class="form-actions">
@@ -799,10 +677,10 @@ footer{background:#28151c;color:#f5e8e5;text-align:center;padding:29px 15px;font
 </div>
 
 <script>
-/* ======================================================
-   ১. FIREBASE CONFIGURATION
-   Firebase Console থেকে নিজের কনফিগারেশন এখানে বসান।
-   ====================================================== */
+/* ========================================
+   FIREBASE CONFIG
+   Firebase Console থেকে নিজের তথ্য বসাবেন।
+======================================== */
 
 const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
@@ -813,39 +691,45 @@ const firebaseConfig = {
   appId: "YOUR_APP_ID"
 };
 
-/* ======================================================
-   ২. DEMO ADMIN PASSWORD
-   Base64("123456") = "MTIzNDU2"
-   এটি নিরাপদ পাসওয়ার্ড স্টোরেজ নয়।
-   লাইভ সাইটে Firebase Authentication ব্যবহার করুন।
-   ====================================================== */
+/* ========================================
+   DEMO PASSWORD
+   ডিফল্ট পাসওয়ার্ড: 123456
+======================================== */
 
 const DEFAULT_ADMIN_PASSWORD_BASE64 = "MTIzNDU2";
 const ADMIN_PASSWORD_KEY = "kf_admin_password_b64";
+const ADMIN_PASSWORD_VERSION_KEY = "kf_admin_password_version";
+
+(function initializeAdminPassword(){
+  if(localStorage.getItem(ADMIN_PASSWORD_VERSION_KEY) !== "2"){
+    localStorage.setItem(ADMIN_PASSWORD_KEY,DEFAULT_ADMIN_PASSWORD_BASE64);
+    localStorage.setItem(ADMIN_PASSWORD_VERSION_KEY,"2");
+  }
+})();
+
 const SETTINGS_DOC = "settings/main";
 const PRODUCTS_COLLECTION = "products";
+const DEMO_PRODUCTS_KEY = "kf_demo_products_v2";
+const DEMO_SETTINGS_KEY = "kf_demo_settings_v2";
 
 let db = null;
 let firebaseReady = false;
 let adminLoggedIn = false;
 let currentFilter = "all";
 let products = [];
-let settings = {
-  shopName: "খাদিজা কুটিরশিল্প এন্ড জামদানি শপ",
-  englishName: "Khadija Kutirshilpo & Jamdani Shop",
-  facebook: "",
-  youtube: "",
-  whatsapp: "",
-  heroDescription: "বাংলার ঐতিহ্যবাহী জামদানি, রুচিশীল পোশাক ও কুটিরশিল্পের সুন্দর কালেকশন। আপনার পছন্দের পণ্য বেছে নিন, অর্ডার করুন সহজেই।",
-  aboutDescription: "খাদিজা কুটিরশিল্প এন্ড জামদানি শপে আপনাকে স্বাগতম। দেশীয় ঐতিহ্য, নান্দনিক ডিজাইন ও রুচিশীল পণ্যের মাধ্যমে আপনার কেনাকাটাকে সহজ ও আনন্দময় করাই আমাদের লক্ষ্য।",
-  heroImage: ""
+
+const defaultSettings = {
+  shopName:"খাদিজা কুটিরশিল্প এন্ড জামদানি শপ",
+  englishName:"Khadija Kutirshilpo & Jamdani Shop",
+  facebook:"",
+  youtube:"",
+  whatsapp:"",
+  heroDescription:"বাংলার ঐতিহ্যবাহী জামদানি, রুচিশীল পোশাক ও কুটিরশিল্পের সুন্দর কালেকশন। আপনার পছন্দের পণ্য বেছে নিন, অর্ডার করুন সহজেই।",
+  aboutDescription:"খাদিজা কুটিরশিল্প এন্ড জামদানি শপে আপনাকে স্বাগতম। দেশীয় ঐতিহ্য, নান্দনিক ডিজাইন ও রুচিশীল পণ্যের মাধ্যমে আপনার কেনাকাটাকে সহজ ও আনন্দময় করাই আমাদের লক্ষ্য।",
+  heroImage:""
 };
 
-/* Demo mode: Firebase config না দিলে ডেটা শুধু এই ব্রাউজারে থাকবে।
-   এটি ব্যাকআপ নয় এবং অন্য ডিভাইসে সিঙ্ক হবে না। */
-
-const DEMO_PRODUCTS_KEY = "kf_demo_products_v1";
-const DEMO_SETTINGS_KEY = "kf_demo_settings_v1";
+let settings = {...defaultSettings};
 
 const starterProducts = [
   {
@@ -879,7 +763,7 @@ const starterProducts = [
 
 const $ = id => document.getElementById(id);
 
-function showNotice(message, type=""){
+function showNotice(message,type=""){
   const el=$("storeNotice");
   el.textContent=message;
   el.className="notice"+(type?" "+type:"");
@@ -888,124 +772,54 @@ function showNotice(message, type=""){
 function hideNotice(){
   $("storeNotice").classList.add("hidden");
 }
-function isFirebaseConfigured(){
-  return firebaseConfig.apiKey &&
-    firebaseConfig.projectId &&
-    !firebaseConfig.apiKey.startsWith("YOUR_") &&
-    !firebaseConfig.projectId.startsWith("YOUR_");
-}
 function escapeHTML(value){
-  return String(value ?? "").replace(/[&<>"']/g, ch => ({
+  return String(value??"").replace(/[&<>"']/g,ch=>({
     "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
   })[ch]);
 }
 function validHttpUrl(value){
   try{
     const u=new URL(value);
-    return u.protocol==="https:" || u.protocol==="http:";
+    return u.protocol==="https:"||u.protocol==="http:";
   }catch(e){return false;}
-}
-function safeLink(value){
-  return validHttpUrl(value) ? value : "#";
 }
 function formatMoney(value){
   return "৳ "+Number(value||0).toLocaleString("bn-BD");
 }
+function isFirebaseConfigured(){
+  return firebaseConfig.apiKey &&
+    firebaseConfig.projectId &&
+    !firebaseConfig.apiKey.startsWith("YOUR_") &&
+    !firebaseConfig.projectId.startsWith("YOUR_");
+}
+function encodePassword(password){
+  const bytes=new TextEncoder().encode(password);
+  let binary="";
+  bytes.forEach(b=>binary+=String.fromCharCode(b));
+  return btoa(binary);
+}
+function getStoredPassword(){
+  return localStorage.getItem(ADMIN_PASSWORD_KEY)||DEFAULT_ADMIN_PASSWORD_BASE64;
+}
 
-/* Date, weekday and live clock */
+/* Date and time */
 function updateDateTime(){
   const now=new Date();
-  const bnDate=new Intl.DateTimeFormat("bn-BD",{
+  $("banglaDate").textContent=new Intl.DateTimeFormat("bn-BD",{
     day:"numeric",month:"long",year:"numeric"
   }).format(now);
-  const bnDay=new Intl.DateTimeFormat("bn-BD",{
+  $("dayName").textContent=new Intl.DateTimeFormat("bn-BD",{
     weekday:"long"
   }).format(now);
-  const bnTime=new Intl.DateTimeFormat("bn-BD",{
-    hour:"numeric",minute:"2-digit",second:"2-digit",
-    hour12:true
+  $("liveClock").textContent=new Intl.DateTimeFormat("bn-BD",{
+    hour:"numeric",minute:"2-digit",second:"2-digit",hour12:true
   }).format(now);
-
-  $("banglaDate").textContent=bnDate;
-  $("dayName").textContent=bnDay;
-  $("liveClock").textContent=bnTime;
   $("year").textContent=now.getFullYear();
 }
 updateDateTime();
 setInterval(updateDateTime,1000);
 
-/* Firebase initialization */
-async function initializeStore(){
-  if(isFirebaseConfigured()){
-    try{
-      if(!firebase.apps.length) firebase.initializeApp(firebaseConfig);
-      db=firebase.firestore();
-      firebaseReady=true;
-
-      // Remote settings take priority.
-      const settingsSnap=await db.doc(SETTINGS_DOC).get();
-      if(settingsSnap.exists){
-        settings={...settings,...settingsSnap.data()};
-      }else{
-        await db.doc(SETTINGS_DOC).set(settings);
-      }
-
-      const productsSnap=await db.collection(PRODUCTS_COLLECTION).get();
-      products=productsSnap.docs.map(doc=>({id:doc.id,...doc.data()}));
-      renderProducts();
-      applySettings();
-      updateAdminStatus("Firebase Firestore সংযুক্ত।");
-      hideNotice();
-
-      // Live updates across devices.
-      db.collection(PRODUCTS_COLLECTION).onSnapshot(snapshot=>{
-        products=snapshot.docs.map(doc=>({id:doc.id,...doc.data()}));
-        renderProducts();
-        if(adminLoggedIn) renderAdminProducts();
-      },error=>{
-        console.error(error);
-        showNotice("পণ্যের লাইভ আপডেট পাওয়া যাচ্ছে না। Firebase Rules পরীক্ষা করুন।","error");
-      });
-
-      db.doc(SETTINGS_DOC).onSnapshot(snapshot=>{
-        if(snapshot.exists){
-          settings={...settings,...snapshot.data()};
-          applySettings();
-          if(adminLoggedIn) fillSettingsForm();
-        }
-      },error=>console.error("Settings listener:",error));
-
-      return;
-    }catch(error){
-      console.error("Firebase error:",error);
-      showNotice("Firebase সংযোগে সমস্যা হয়েছে। Firebase কনফিগারেশন ও Firestore Rules পরীক্ষা করুন।","error");
-      updateAdminStatus("Firebase সংযোগ ব্যর্থ: "+error.message);
-      // Do not silently overwrite remote data with local demo data.
-      products=[];
-      renderProducts();
-      applySettings();
-      return;
-    }
-  }
-
-  // Local-only demo mode.
-  try{
-    const savedProducts=localStorage.getItem(DEMO_PRODUCTS_KEY);
-    products=savedProducts?JSON.parse(savedProducts):starterProducts;
-    const savedSettings=localStorage.getItem(DEMO_SETTINGS_KEY);
-    if(savedSettings) settings={...settings,...JSON.parse(savedSettings)};
-    if(!savedProducts) saveDemoProducts();
-    applySettings();
-    renderProducts();
-    updateAdminStatus("ডেমো মোড: ডেটা শুধু এই ব্রাউজারে সংরক্ষিত।");
-    showNotice("ডেমো মোড চলছে। সব ডিভাইসে ডেটা রাখতে Firebase কনফিগার করুন।");
-  }catch(error){
-    products=starterProducts;
-    renderProducts();
-    showNotice("স্থানীয় ডেটা পড়তে সমস্যা হয়েছে।","error");
-  }
-}
-
+/* Demo storage */
 function saveDemoProducts(){
   localStorage.setItem(DEMO_PRODUCTS_KEY,JSON.stringify(products));
 }
@@ -1013,12 +827,93 @@ function saveDemoSettings(){
   localStorage.setItem(DEMO_SETTINGS_KEY,JSON.stringify(settings));
 }
 
-/* Render products */
+/* Initialize database */
+async function initializeStore(){
+  if(isFirebaseConfigured()){
+    try{
+      if(!firebase.apps.length)firebase.initializeApp(firebaseConfig);
+      db=firebase.firestore();
+      firebaseReady=true;
+
+      const settingsSnap=await db.doc(SETTINGS_DOC).get();
+
+      if(settingsSnap.exists){
+        settings={...defaultSettings,...settingsSnap.data()};
+      }else{
+        await db.doc(SETTINGS_DOC).set(defaultSettings);
+        settings={...defaultSettings};
+      }
+
+      const snap=await db.collection(PRODUCTS_COLLECTION).get();
+      products=snap.docs.map(doc=>({id:doc.id,...doc.data()}));
+
+      applySettings();
+      renderProducts();
+      updateAdminStatus("Firebase Firestore সংযুক্ত।");
+      hideNotice();
+
+      db.collection(PRODUCTS_COLLECTION).onSnapshot(snapshot=>{
+        products=snapshot.docs.map(doc=>({id:doc.id,...doc.data()}));
+        renderProducts();
+        if(adminLoggedIn)renderAdminProducts();
+      },error=>{
+        console.error(error);
+        showNotice("পণ্যের আপডেট পাওয়া যাচ্ছে না। Firebase Rules পরীক্ষা করুন।","error");
+      });
+
+      db.doc(SETTINGS_DOC).onSnapshot(snapshot=>{
+        if(snapshot.exists){
+          settings={...defaultSettings,...snapshot.data()};
+          applySettings();
+          if(adminLoggedIn)fillSettingsForm();
+        }
+      },error=>console.error("Settings listener:",error));
+
+      return;
+    }catch(error){
+      console.error("Firebase error:",error);
+      firebaseReady=false;
+      db=null;
+      products=[];
+      renderProducts();
+      applySettings();
+      updateAdminStatus("Firebase সংযোগ ব্যর্থ: "+error.message);
+      showNotice("Firebase সংযোগে সমস্যা হয়েছে। কনফিগারেশন ও Firestore Rules পরীক্ষা করুন।","error");
+      return;
+    }
+  }
+
+  /* Local demo mode */
+  try{
+    const savedProducts=localStorage.getItem(DEMO_PRODUCTS_KEY);
+    products=savedProducts?JSON.parse(savedProducts):starterProducts.map(p=>({...p}));
+
+    const savedSettings=localStorage.getItem(DEMO_SETTINGS_KEY);
+    settings=savedSettings
+      ?{...defaultSettings,...JSON.parse(savedSettings)}
+      :{...defaultSettings};
+
+    if(!savedProducts)saveDemoProducts();
+
+    renderProducts();
+    applySettings();
+    updateAdminStatus("ডেমো মোড: ডেটা শুধু এই ব্রাউজারে সংরক্ষিত।");
+    showNotice("ডেমো মোড চলছে। অনলাইনে সবার জন্য ডেটা রাখতে Firebase কনফিগার করুন।");
+  }catch(error){
+    console.error(error);
+    products=starterProducts.map(p=>({...p}));
+    renderProducts();
+    applySettings();
+    showNotice("স্থানীয় ডেটা পড়তে সমস্যা হয়েছে।","error");
+  }
+}
+
+/* Render product cards */
 function renderProducts(){
   const grid=$("productsGrid");
   const filtered=currentFilter==="all"
-    ? products
-    : products.filter(p=>p.category===currentFilter);
+    ?products
+    :products.filter(p=>p.category===currentFilter);
 
   if(!filtered.length){
     grid.innerHTML='<div class="empty-state"><i class="fa-solid fa-box-open"></i><br>এই ক্যাটাগরিতে এখন কোনো পণ্য নেই।</div>';
@@ -1031,14 +926,15 @@ function renderProducts(){
     const badge=escapeHTML(p.badge||"নতুন কালেকশন");
     const desc=escapeHTML(p.description||"বিস্তারিত জানতে যোগাযোগ করুন।");
     const image=validHttpUrl(p.image||"")?p.image:"";
-    const productId=encodeURIComponent(p.id);
     const waNumber=String(settings.whatsapp||"").replace(/\D/g,"");
+
     const orderText=encodeURIComponent(
       "আসসালামু আলাইকুম, আমি এই পণ্যটি অর্ডার করতে চাই:\n"+
       "পণ্য: "+(p.name||"")+"\n"+
       "দাম: "+Number(p.price||0)+" টাকা\n"+
       "পণ্য ID: "+p.id
     );
+
     const orderHref=waNumber
       ?"https://wa.me/"+waNumber+"?text="+orderText
       :"#social";
@@ -1069,7 +965,7 @@ function renderProducts(){
   }).join("");
 }
 
-/* Product category filters */
+/* Category filters */
 document.querySelectorAll(".filter-btn").forEach(btn=>{
   btn.addEventListener("click",()=>{
     document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));
@@ -1079,22 +975,24 @@ document.querySelectorAll(".filter-btn").forEach(btn=>{
   });
 });
 
-/* Apply shop settings to homepage */
+/* Apply settings */
 function setLink(id,url){
   const el=$(id);
   if(!el)return;
-  el.href=safeLink(url);
-  el.classList.toggle("hidden",!validHttpUrl(url||""));
+  const valid=validHttpUrl(url||"");
+  el.href=valid?url:"#social";
+  if(el.classList.contains("hidden")||id==="facebookLink"||id==="youtubeLink"){
+    el.classList.toggle("hidden",!valid);
+  }
 }
 function setWhatsAppLink(id){
   const number=String(settings.whatsapp||"").replace(/\D/g,"");
   const el=$(id);
-  if(!el)return;
-  el.href=number?"https://wa.me/"+number:"#social";
+  if(el)el.href=number?"https://wa.me/"+number:"#social";
 }
 function applySettings(){
-  if(settings.heroDescription) $("heroDescription").textContent=settings.heroDescription;
-  if(settings.aboutDescription) $("aboutDescription").textContent=settings.aboutDescription;
+  $("heroDescription").textContent=settings.heroDescription||defaultSettings.heroDescription;
+  $("aboutDescription").textContent=settings.aboutDescription||defaultSettings.aboutDescription;
 
   setLink("facebookLink",settings.facebook);
   setLink("youtubeLink",settings.youtube);
@@ -1107,26 +1005,39 @@ function applySettings(){
 
   $("heroYoutube").href=validHttpUrl(settings.youtube)?settings.youtube:"#social";
 
-  if(settings.heroImage && validHttpUrl(settings.heroImage)){
-    $("heroFrame").innerHTML=
-      '<img src="'+escapeHTML(settings.heroImage)+'" alt="দোকানের কালেকশন" onerror="this.parentElement.innerHTML=\\'<div class=&quot;hero-placeholder&quot;><div><i class=&quot;fa-solid fa-spa&quot;></i><strong>জামদানির সৌন্দর্য</strong></div></div>\\'">';
+  if(settings.heroImage&&validHttpUrl(settings.heroImage)){
+    const img=document.createElement("img");
+    img.src=settings.heroImage;
+    img.alt="দোকানের কালেকশন";
+    img.onerror=()=>{
+      $("heroFrame").innerHTML='<div class="hero-placeholder"><div><i class="fa-solid fa-spa"></i><strong>জামদানির সৌন্দর্য</strong><span>ঐতিহ্য থাকুক আপনার সাজে</span></div></div>';
+    };
+    $("heroFrame").replaceChildren(img);
   }else{
-    $("heroFrame").innerHTML=
-      '<div class="hero-placeholder"><div><i class="fa-solid fa-spa"></i><strong>জামদানির সৌন্দর্য</strong><span>ঐতিহ্য থাকুক আপনার সাজে</span></div></div>';
+    $("heroFrame").innerHTML='<div class="hero-placeholder"><div><i class="fa-solid fa-spa"></i><strong>জামদানির সৌন্দর্য</strong><span>ঐতিহ্য থাকুক আপনার সাজে</span></div></div>';
   }
 }
 
-/* Admin modal helpers */
+/* Modal helpers */
 function openModal(id){$(id).classList.add("show")}
 function closeModal(id){$(id).classList.remove("show")}
+
 document.querySelectorAll("[data-close]").forEach(btn=>{
   btn.addEventListener("click",()=>closeModal(btn.dataset.close));
 });
+
 document.querySelectorAll(".overlay").forEach(overlay=>{
   overlay.addEventListener("click",event=>{
-    if(event.target===overlay) closeModal(overlay.id);
+    if(event.target===overlay)closeModal(overlay.id);
   });
 });
+
+document.addEventListener("keydown",event=>{
+  if(event.key==="Escape"){
+    document.querySelectorAll(".overlay.show").forEach(el=>closeModal(el.id));
+  }
+});
+
 $("openAdmin").addEventListener("click",()=>{
   if(adminLoggedIn){
     openModal("adminOverlay");
@@ -1137,20 +1048,10 @@ $("openAdmin").addEventListener("click",()=>{
   }
 });
 
-/* Base64 demo password.
-   WARNING: not secure for a public production website. */
-function encodePassword(password){
-  const bytes=new TextEncoder().encode(password);
-  let binary="";
-  bytes.forEach(b=>binary+=String.fromCharCode(b));
-  return btoa(binary);
-}
-function getStoredPassword(){
-  return localStorage.getItem(ADMIN_PASSWORD_KEY)||DEFAULT_ADMIN_PASSWORD_BASE64;
-}
-
+/* Login */
 $("loginForm").addEventListener("submit",event=>{
   event.preventDefault();
+
   const entered=$("adminPassword").value;
 
   if(encodePassword(entered)===getStoredPassword()){
@@ -1160,6 +1061,7 @@ $("loginForm").addEventListener("submit",event=>{
     fillSettingsForm();
     renderAdminProducts();
     openModal("adminOverlay");
+
     updateAdminStatus(firebaseReady
       ?"Firebase Firestore সংযুক্ত।"
       :"ডেমো মোড: ডেটা অন্য ডিভাইসে যাবে না।");
@@ -1170,9 +1072,7 @@ $("loginForm").addEventListener("submit",event=>{
 });
 
 function requireAdmin(){
-  if(!adminLoggedIn){
-    throw new Error("অ্যাডমিন লগইন প্রয়োজন।");
-  }
+  if(!adminLoggedIn)throw new Error("অ্যাডমিন লগইন প্রয়োজন।");
 }
 function updateAdminStatus(message){
   $("adminStatus").textContent=message;
@@ -1181,15 +1081,17 @@ function updateAdminStatus(message){
 /* Admin product list */
 function renderAdminProducts(){
   const list=$("adminProductList");
+
   if(!products.length){
-    list.innerHTML='<div class="empty-state">কোনো পণ্য নেই। “নতুন পণ্য” বাটনে চাপ দিন।</div>';
+    list.innerHTML='<div class="empty-state">কোনো পণ্য নেই। নতুন পণ্য যোগ করুন।</div>';
     return;
   }
+
   list.innerHTML=products.map(p=>`
     <div class="admin-row">
       ${validHttpUrl(p.image||"")
         ?`<img src="${escapeHTML(p.image)}" alt="">`
-        :'<div style="width:51px;height:57px;display:grid;place-items:center;background:#f3e7d9;border-radius:6px;color:#a78a66"><i class="fa-solid fa-spa"></i></div>'}
+        :'<div class="admin-image-placeholder"><i class="fa-solid fa-spa"></i></div>'}
       <div class="row-info">
         <strong>${escapeHTML(p.name)}</strong>
         <small>${escapeHTML(p.category||"অন্যান্য")} · ${formatMoney(p.price)}</small>
@@ -1216,8 +1118,10 @@ $("addProductBtn").addEventListener("click",()=>{
   $("productFormTitle").textContent="নতুন পণ্য যোগ করুন";
   openModal("productOverlay");
 });
+
 $("refreshProducts").addEventListener("click",async()=>{
   requireAdmin();
+
   try{
     if(firebaseReady){
       const snap=await db.collection(PRODUCTS_COLLECTION).get();
@@ -1226,9 +1130,10 @@ $("refreshProducts").addEventListener("click",async()=>{
       const saved=localStorage.getItem(DEMO_PRODUCTS_KEY);
       products=saved?JSON.parse(saved):[];
     }
+
     renderProducts();
     renderAdminProducts();
-    updateAdminStatus(firebaseReady?"Firebase থেকে পণ্য রিফ্রেশ হয়েছে।":"ডেমো ডেটা রিফ্রেশ হয়েছে।");
+    updateAdminStatus("পণ্যের তালিকা রিফ্রেশ হয়েছে।");
   }catch(error){
     alert("রিফ্রেশ করা যায়নি: "+error.message);
   }
@@ -1236,6 +1141,7 @@ $("refreshProducts").addEventListener("click",async()=>{
 
 function editProduct(id){
   requireAdmin();
+
   const p=products.find(item=>item.id===id);
   if(!p)return alert("পণ্যটি পাওয়া যায়নি।");
 
@@ -1247,34 +1153,37 @@ function editProduct(id){
   form.elements.image.value=p.image||"";
   form.elements.badge.value=p.badge||"";
   form.elements.description.value=p.description||"";
+
   $("productFormTitle").textContent="পণ্য সম্পাদনা করুন";
   openModal("productOverlay");
 }
 
+/* Save product */
 $("productForm").addEventListener("submit",async event=>{
   event.preventDefault();
   requireAdmin();
 
   const form=event.currentTarget;
   const data=new FormData(form);
+
   const id=String(data.get("id")||"").trim();
   const name=String(data.get("name")||"").trim();
   const price=Number(data.get("price"));
   const category=String(data.get("category")||"");
   const image=String(data.get("image")||"").trim();
 
-  if(!name || !Number.isFinite(price) || price<0){
-    alert("পণ্যের নাম ও সঠিক দাম দিন।");return;
+  if(!name||!Number.isFinite(price)||price<0){
+    alert("পণ্যের নাম ও সঠিক দাম দিন।");
+    return;
   }
+
   if(!validHttpUrl(image)){
-    alert("ছবির সঠিক http/https URL দিন।");return;
+    alert("ছবির সঠিক http/https URL দিন।");
+    return;
   }
 
   const product={
-    name,
-    price,
-    category,
-    image,
+    name,price,category,image,
     badge:String(data.get("badge")||"").trim(),
     description:String(data.get("description")||"").trim(),
     updatedAt:firebaseReady
@@ -1290,6 +1199,7 @@ $("productForm").addEventListener("submit",async event=>{
         product.createdAt=firebase.firestore.FieldValue.serverTimestamp();
         await db.collection(PRODUCTS_COLLECTION).add(product);
       }
+
       const snap=await db.collection(PRODUCTS_COLLECTION).get();
       products=snap.docs.map(doc=>({id:doc.id,...doc.data()}));
     }else{
@@ -1309,15 +1219,18 @@ $("productForm").addEventListener("submit",async event=>{
     showNotice("পণ্য সফলভাবে সংরক্ষণ করা হয়েছে।","success");
   }catch(error){
     console.error(error);
-    alert("পণ্য সংরক্ষণ হয়নি। Firebase Rules ও সংযোগ পরীক্ষা করুন।\n"+error.message);
+    alert("পণ্য সংরক্ষণ হয়নি। Firebase সংযোগ ও Rules পরীক্ষা করুন।\n"+error.message);
   }
 });
 
+/* Delete product */
 async function deleteProduct(id){
   requireAdmin();
+
   const p=products.find(item=>item.id===id);
   if(!p)return;
-  if(!confirm('“'+p.name+'” পণ্যটি মুছে ফেলবেন?'))return;
+
+  if(!confirm("“"+p.name+"” পণ্যটি মুছে ফেলবেন?"))return;
 
   try{
     if(firebaseReady){
@@ -1328,9 +1241,11 @@ async function deleteProduct(id){
       products=products.filter(item=>item.id!==id);
       saveDemoProducts();
     }
+
     renderProducts();
     renderAdminProducts();
     updateAdminStatus("পণ্য মুছে ফেলা হয়েছে।");
+    showNotice("পণ্য মুছে ফেলা হয়েছে।","success");
   }catch(error){
     alert("পণ্য মুছতে সমস্যা হয়েছে: "+error.message);
   }
@@ -1340,15 +1255,15 @@ async function deleteProduct(id){
 function fillSettingsForm(){
   const form=$("settingsForm");
   Object.keys(settings).forEach(key=>{
-    if(form.elements[key]) form.elements[key].value=settings[key]||"";
+    if(form.elements[key])form.elements[key].value=settings[key]||"";
   });
 }
+
 $("settingsForm").addEventListener("submit",async event=>{
   event.preventDefault();
   requireAdmin();
 
-  const form=event.currentTarget;
-  const data=new FormData(form);
+  const data=new FormData(event.currentTarget);
 
   const next={
     ...settings,
@@ -1362,14 +1277,17 @@ $("settingsForm").addEventListener("submit",async event=>{
     heroImage:String(data.get("heroImage")||"").trim()
   };
 
-  if(next.facebook && !validHttpUrl(next.facebook)){
-    alert("Facebook লিংকটি সঠিক নয়।");return;
+  if(next.facebook&&!validHttpUrl(next.facebook)){
+    alert("Facebook লিংক সঠিক নয়।");
+    return;
   }
-  if(next.youtube && !validHttpUrl(next.youtube)){
-    alert("YouTube লিংকটি সঠিক নয়।");return;
+  if(next.youtube&&!validHttpUrl(next.youtube)){
+    alert("YouTube লিংক সঠিক নয়।");
+    return;
   }
-  if(next.heroImage && !validHttpUrl(next.heroImage)){
-    alert("হোমপেজের ছবির লিংকটি সঠিক নয়।");return;
+  if(next.heroImage&&!validHttpUrl(next.heroImage)){
+    alert("হোমপেজের ছবির লিংক সঠিক নয়।");
+    return;
   }
 
   try{
@@ -1378,8 +1296,8 @@ $("settingsForm").addEventListener("submit",async event=>{
     }else{
       settings=next;
       saveDemoSettings();
-      applySettings();
     }
+
     settings=next;
     applySettings();
     updateAdminStatus("ওয়েবসাইট সেটিংস সংরক্ষণ করা হয়েছে।");
@@ -1389,8 +1307,7 @@ $("settingsForm").addEventListener("submit",async event=>{
   }
 });
 
-/* Demo password change only.
-   Production authentication must be moved to Firebase Authentication. */
+/* Change demo password */
 $("passwordForm").addEventListener("submit",event=>{
   event.preventDefault();
   requireAdmin();
@@ -1401,27 +1318,34 @@ $("passwordForm").addEventListener("submit",event=>{
   const confirmPass=form.elements.confirmPassword.value;
 
   if(encodePassword(oldPass)!==getStoredPassword()){
-    alert("বর্তমান পাসওয়ার্ড সঠিক নয়.");return;
+    alert("বর্তমান পাসওয়ার্ড সঠিক নয়।");
+    return;
   }
+
   if(newPass.length<8){
-    alert("নতুন পাসওয়ার্ড কমপক্ষে ৮ অক্ষরের হতে হবে।");return;
+    alert("নতুন পাসওয়ার্ড কমপক্ষে ৮ অক্ষরের হতে হবে।");
+    return;
   }
+
   if(newPass!==confirmPass){
-    alert("নতুন পাসওয়ার্ড দুটি মিলছে না।");return;
+    alert("নতুন পাসওয়ার্ড দুটি মিলছে না।");
+    return;
   }
 
   localStorage.setItem(ADMIN_PASSWORD_KEY,encodePassword(newPass));
   form.reset();
-  alert("এই ব্রাউজারে ডেমো পাসওয়ার্ড পরিবর্তন হয়েছে। মনে রাখবেন, এটি নিরাপদ সার্ভার-ভিত্তিক লগইন নয়।");
+
+  alert("এই ব্রাউজারে ডেমো পাসওয়ার্ড পরিবর্তন হয়েছে। নিরাপদ সার্ভার-ভিত্তিক লগইন ব্যবহার করুন।");
 });
 
+/* Logout */
 $("adminLogout").addEventListener("click",()=>{
   adminLoggedIn=false;
   closeModal("adminOverlay");
   updateAdminStatus("লগআউট করা হয়েছে।");
 });
 
-/* Start */
+/* Start website */
 initializeStore();
 </script>
 
